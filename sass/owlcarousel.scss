@@ -1,0 +1,108 @@
+/*-- Owl slide common --*/
+
+.hero-area.owl-carousel .owl-nav {
+   margin: 0;
+}
+
+.owl-carousel .owl-nav {
+   text-align: center;
+}
+
+.owl-carousel.owl-theme .owl-nav [class*=owl-] {
+   background: #2154cf;
+   color: #fff;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 40px;
+   height: 40px;
+   line-height: 42px;
+   font-size: 20px;
+   text-align: center;
+   margin: 0;
+   border-radius: 0;
+   -webkit-transition: 400ms;
+   -moz-transition: 400ms;
+   -o-transition: 400ms;
+   transition: 400ms;
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+   backface-visibility: hidden;
+}
+
+.owl-carousel.owl-theme .owl-nav [class*=owl-prev] {
+   right: 40px;
+}
+
+.owl-carousel.owl-theme .owl-nav>div:hover {
+   background: #272d33;
+}
+
+// .owl-theme .owl-dots {
+//    text-align: center;
+//    margin-top: 40px;
+//    position: relative;
+//    z-index: 1;
+// }
+
+// .owl-theme .owl-dots .owl-dot {
+//    display: inline-block;
+// }
+
+// .owl-theme .owl-dots .owl-dot span {
+//    width: 30px;
+//    height: 4px;
+//    margin: 5px 4px;
+//    background: #000;
+//    opacity: .2;
+//    display: inline-block;
+// }
+
+// .owl-theme .owl-dots .owl-dot.active span {
+//    background: #2154cf;
+//    opacity: 1;
+// }
+.owl-carousel.owl-loaded .owl-nav .owl-next.disabled, .owl-carousel.owl-loaded .owl-nav .owl-prev.disabled {
+   background: #ff5c23 !important;
+   color: #fff !important;
+}
+.hero-area.owl-carousel.owl-theme .owl-nav [class*=owl-] {
+   background: rgba(0, 0, 0, 0.3);
+   color: #fff;
+   height: 100px;
+   line-height: 100px;
+   border-radius: 0;
+   transition: all 500ms ease;
+   margin-top: -25px;
+}
+
+.hero-area.owl-carousel.owl-theme .owl-nav [class*=owl-]:hover {
+   background: #ff5c23;
+}
+
+.hero-area.owl-theme .owl-nav div {
+   background: rgba(0, 0, 0, 0.5);
+   position: absolute;
+   top: 50%;
+   width: 36px;
+   height: 72px;
+   line-height: 72px;
+   font-size: 26px;
+   text-align: center;
+   margin: 0;
+   border-radius: 0;
+   transition: 400ms;
+   transition: 400ms;
+   transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+
+.hero-area.owl-theme .owl-nav div:hover {
+   background: #ff5c23;
+   color: #fff;
+}
+
+.hero-area.owl-theme .owl-nav [class*=owl-prev] {
+   right: auto;
+   left: 0;
+}

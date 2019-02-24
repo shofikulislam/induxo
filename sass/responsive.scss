@@ -1,0 +1,371 @@
+/*==========================
+tab rotate 
+===========================*/
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    // header social links
+    .social-links li {
+        margin-right: 15px;
+    }
+
+    // header nav
+    .header ul.navbar-nav>li {
+        margin-left: 20px;
+
+        a {
+            margin-left: 0;
+        }
+    }
+
+
+    .header.header-transparent ul.navbar-nav {
+        margin-right: 55px;
+    }
+
+    .header ul.navbar-nav li .dropdown-menu {
+        margin: 0;
+    }
+
+
+    .header ul.navbar-nav>li>a {
+        font-size: 13px;
+    }
+
+    // banner item
+    .banner-item .banner-content-wrap {
+        padding: 300px 0 182px;
+    }
+
+    .banner-item .banner-content-wrap .banner-title {
+        font-size: 45px;
+    }
+
+    // nav search
+    .nav-search {
+        right: 15%;
+    }
+
+    .search-block {
+        right: 15%;
+    }
+
+    .search-block .search-close {
+        font-size: 25px;
+    }
+
+    .nav-search i {
+        font-size: 15px;
+    }
+
+    .nav-search {
+        right: 14%;
+    }
+
+    // button
+    .btn {
+        padding: 0px 15px;
+        font-size: 13px;
+    }
+
+    // funfact
+    .ts-single-funfact .funfact-title {
+        font-size: 14px;
+    }
+
+    .ts-single-funfact {
+        padding: 0 30px;
+    }
+
+    .single-service-img img {
+        width: 100%;
+    }
+
+    // facts
+    .ts-facts-area .intro-content-wrap {
+        padding: 95px 50px 64px 50px;
+        display: inline-block;
+    }
+
+    .ts-facts-area .intro-content-wrap .single-intro span {
+        font-size: 15px;
+    }
+
+    // features
+    .ts-features .ts-features-text p {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    // blog
+    .ts-blog .single-blog .post-meta-date {
+        right: 25%;
+    }
+
+
+
+    .ts-blog .single-blog h3 {
+        font-size: 18px;
+    }
+}
+
+/*==========================
+tab device 
+===========================*/
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .top-info li {
+        margin-bottom: 5px;
+    }
+
+    .topbar-transparent {
+        padding: 8px 0;
+    }
+
+    .header .navbar {
+        padding: 70px 0;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: none;
+        color: #fff;
+        width: 30px;
+        height: 20px;
+        padding-top: 1px;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 12px 0;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: #fa6742;
+        background-color: #fa6742;
+        color: #fff;
+    }
+
+    .navbar-light .navbar-toggler:hover {
+        cursor: pointer;
+    }
+
+    .nav-search {
+        display: none;
+    }
+
+    .header-transparent .navbar-nav {
+        background: #222;
+        padding: 20px 0;
+    }
+
+    .header ul.navbar-nav>li>a {
+        line-height: 40px !important;
+    }
+
+    .header .navbar .header-quote {
+        display: none;
+    }
+
+    .header .navbar {
+        border-bottom: unset;
+    }
+
+    .header.header-transparent ul.navbar-nav {
+        width: 100%;
+    }
+
+    ul.navbar-nav li a i,
+    .dropdown-submenu>a:after {
+        background: #000;
+        float: right;
+        width: 36px;
+        height: 28px;
+        line-height: 28px;
+        margin-top: -5px;
+        text-align: center;
+    }
+
+    ul.navbar-nav>li {
+        display: block;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    ul.navbar-nav li a {
+        line-height: normal !important;
+        border-bottom: 1px solid #38393d;
+        padding: 15px 0;
+        display: block;
+        min-width: 350px;
+    }
+
+    ul.navbar-nav li:last-child a {
+        border-bottom: 0;
+    }
+
+    .banner-item .banner-content-wrap {
+        padding: 240px 0 100px;
+    }
+
+    .about-area .banner-btn-area-area {
+        margin-bottom: 50px;
+    }
+
+    .cta-area h2 {
+        font-size: 30px;
+    }
+
+    .ts-blog .single-blog .post-meta-date {
+        right: 65%;
+        top: 12%;
+    }
+
+    .header.sticky .navbar {
+        padding: 20px 0;
+    }
+
+    .contact {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+/*==========================
+small device /mobile sm and large
+===========================*/
+@media (max-width: 767px) {
+
+    .topbar-transparent {
+        text-align: center;
+    }
+
+    .header.sticky .navbar {
+        padding: 20px 0;
+    }
+
+    .about-area .banner-btn-area-area {
+        margin-bottom: 50px;
+    }
+
+    .social-links {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .header .navbar {
+        padding: 90px 0;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: none;
+        color: #fff;
+        width: 30px;
+        height: 20px;
+        padding-top: 1px;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 12px 0;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: #fa6742;
+        background-color: #fa6742;
+        color: #fff;
+    }
+
+    .navbar-light .navbar-toggler:hover {
+        cursor: pointer;
+    }
+
+    .nav-search {
+        display: none;
+    }
+
+    .header-transparent .navbar-nav {
+        background: #222;
+        padding: 20px 0;
+    }
+
+    .header ul.navbar-nav>li>a {
+        line-height: 40px !important;
+    }
+
+    .header .navbar .header-quote {
+        display: none;
+    }
+
+    .header .navbar {
+        border-bottom: unset;
+    }
+
+    .header.header-transparent ul.navbar-nav {
+        width: 100%;
+    }
+
+    ul.navbar-nav li a i,
+    .dropdown-submenu>a:after {
+        background: #000;
+        float: right;
+        width: 36px;
+        height: 28px;
+        line-height: 28px;
+        margin-top: -5px;
+        text-align: center;
+    }
+
+    ul.navbar-nav>li {
+        display: block;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    ul.navbar-nav li a {
+        line-height: normal !important;
+        border-bottom: 1px solid #38393d;
+        padding: 15px 0;
+        display: block;
+        min-width: 350px;
+    }
+
+    ul.navbar-nav li:last-child a {
+        border-bottom: 0;
+    }
+
+    .quote-btn.btn {
+        display: none;
+    }
+
+    .nav-search {
+        display: none;
+    }
+
+    .cta-area h2 {
+        font-size: 35px;
+    }
+
+    .cta-area .banner-btn-area {
+        text-align: center;
+    }
+
+    .ts-features .section-title {
+        font-size: 30px;
+    }
+
+    .ts-features .ts-features-text p {
+        padding-left: 30px;
+    }
+
+    .ts-features .ts-features-text p::after {
+        left: 0;
+    }
+
+    .ts-blog .single-blog .post-meta-date {
+        top: 13%;
+        right: 55%;
+    }
+
+    .ts-footer .footer-social li a i {
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+    }
+
+}
