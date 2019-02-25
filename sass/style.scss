@@ -14,16 +14,16 @@
 3.   header nav
 4.   hero area
 5    funfact area
-6.    about area
-6.    cta area
-6.    setvice area
-6.    facts area
-6.    features area
-6.    project area
-6.    testimonial area
-6.    blog area
-6.    clients area
-6.    footer area
+6.   about area
+6.   cta area
+6.   setvice area
+6.   facts area
+6.   features area
+6.   project area
+6.   testimonial area
+6.   blog area
+6.   partners area
+6.   footer area
   
 */
 @import 'base';
@@ -589,7 +589,7 @@
    @include background-content();
 
 
-   .about-details {
+   .about-content {
       margin-bottom: 45px;
    }
 
@@ -646,20 +646,19 @@
       CTA area
 ===========================*/
 .cta-area {
+   @include background-content();
+
    .row {
       height: 200px;
    }
 
-   .section-info {
+   .title-bg-small {
       background: none;
       padding-left: 0;
-   }
-
-   p {
       color: #ff5c23;
    }
 
-   h2 {
+   .column-title {
       color: $white-color;
       font-size: 48px;
       padding-bottom: 0;
@@ -682,12 +681,13 @@
    .single-service {
       text-align: left;
       position: relative;
-      img{
+
+      img {
          // width: 100%;
       }
    }
 
-   .service-content-wrap {
+   .ts-service-wrapper {
       position: relative;
       margin-top: 25px;
 
@@ -696,7 +696,7 @@
          left: 0;
       }
 
-      .service-content-details {
+      .service-content {
          position: relative;
          padding-left: 90px;
 
@@ -746,7 +746,13 @@
       overflow: hidden;
       height: 100%;
 
-      .section-title {
+      h2 {
+         span {
+            color: #fff;
+         }
+      }
+
+      .column-title {
          margin-bottom: 60px;
          color: #fff;
          position: relative;
@@ -761,9 +767,7 @@
             bottom: -30px;
          }
 
-         span {
-            color: #fff;
-         }
+
       }
 
       p {
@@ -771,7 +775,7 @@
          margin-bottom: 30px;
       }
 
-      .inro-icon-text {
+      .inro-icon {
          margin-left: 15px;
       }
 
@@ -792,6 +796,10 @@
       features area
 ===========================*/
 .ts-features {
+   .column-title {
+      margin-bottom: 80px;
+   }
+
    .ts-features-text {
       p {
          position: relative;
@@ -869,7 +877,7 @@
             transition: all .5s;
          }
 
-         .dfr-btn {
+         .ts-btn {
             a {
                background: $white-color;
                color: $primary-color;
@@ -902,7 +910,7 @@
    @include background-content();
    height: 540px;
 
-   .section-info {
+   .title-bg-small {
       background: $primary-color;
    }
 
@@ -914,29 +922,47 @@
       }
    }
 
-   .testimonial-content-wrap {
+   .testimonial-carousel {
 
       p {
          font-style: italic;
          font-size: 18px;
-         margin-bottom: 22px;
          color: $white-color;
       }
 
-      .single-testimonial span {
-         margin-left: 15px;
-         font-weight: 700;
-         text-transform: uppercase;
-         color: $white-color;
+      .single-testimonial {
+         .testimonial-footer {
+            display: flex;
+            align-items: center;
+            margin-left: 35%;
+            margin-top: 50px;
 
-         .designation {
-            position: absolute;
-            left: 47%;
-            top: 78%;
-            text-transform: capitalize;
-            font-weight: 400;
-            font-size: 14px;
+            h3 {
+               font-weight: 700;
+               text-transform: uppercase;
+               color: #fff;
+               font-size: 16px;
+               font-family: "Open Sans", sans-serif;
+               display: inline-block;
+               margin-bottom: 0;
+
+               span {
+                  display: block;
+                  font-size: 14px;
+                  font-weight: 300;
+                  margin-top: 10px;
+                  text-align: left;
+               }
+
+
+            }
+
+            .client-info {
+               margin-left: 15px;
+               display: inline-block;
+            }
          }
+
       }
 
    }
@@ -944,9 +970,6 @@
    .owl-carousel .owl-item img {
       height: 80px;
       width: 80px;
-      margin: 0 auto;
-      display: inline-block;
-      margin-top: 28px;
    }
 
    .owl-carousel.owl-theme .owl-nav [class*=owl-] {
@@ -973,7 +996,7 @@
    .single-blog {
       padding: 40px;
 
-      .post-meta-body {
+      .post-meta {
          display: inline-block;
          color: #ff5c23;
          margin-bottom: 30px;
@@ -983,10 +1006,8 @@
          }
       }
 
-      .post-meta-date {
-         position: absolute;
-         right: 38%;
-         top: 10%;
+      .post-date {
+         margin-left: 15px;
          color: #6c6b6f;
 
       }
@@ -1010,17 +1031,21 @@
 }
 
 /*==========================
-      client area
+      partners area
 ===========================*/
-.ts-client {
+.ts-partners {
    padding: 47px;
    background: #edf5f8;
 
-   .clients-carousel {}
+   .partner-logo {
+      display: flex;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+   }
 
    .owl-carousel .owl-item img {
-      width: 100%;
-      height: 60px;
+      width: auto;
    }
 }
 
@@ -1056,7 +1081,7 @@
       margin-top: 15px;
    }
 
-   .list-dash {
+   .list-arrow {
       list-style: none;
 
       li {
@@ -1065,6 +1090,7 @@
          width: 50%;
          padding-bottom: 25px;
          float: left;
+
          &:before {
             font-family: FontAwesome;
             content: "\f105";
@@ -1074,35 +1100,42 @@
          }
       }
 
-      
+
 
       a {
          color: #d5d5d5;
+
          &:hover {
             color: #fc6a2a;
          }
       }
 
-      
+
    }
-   .list-week{
+
+   .list-week {
       li {
          width: 100%;
          color: #d5d5d5;
+
          &:before {
             content: none;
-        }
-        span{
-         float: right;
-        }
-     }
+         }
+
+         span {
+            float: right;
+         }
+      }
    }
+
    .footer-social {
       display: inline-block;
       float: right;
+
       li {
          list-style: none;
          display: inline-block;
+
          a i {
             display: block;
             width: 40px;
@@ -1113,34 +1146,41 @@
             background: #000;
             margin-right: 5px;
             color: #fff;
-          }
-          .fa-facebook {
+         }
+
+         .fa-facebook {
             background-color: #3B5998;
-          }
-          .fa-twitter {
+         }
+
+         .fa-twitter {
             background-color: #55ACEE;
-          }
-          .fa-linkedin {
+         }
+
+         .fa-linkedin {
             background-color: #0976B4;
-          }
-          .fa-instagram {
+         }
+
+         .fa-instagram {
             background-color: #B7242A;
-          }
-          
-     }
-   } 
+         }
+
+      }
+   }
+
    .copy-right {
       background: #001541;
       padding: 20px 0;
       margin-top: 30px;
+
       .copyright-text {
          margin-top: 5px;
-         color:#fff;
-         span{
+         color: #fff;
+
+         span {
             color: #ff5c23;
          }
       }
-  }
+   }
 }
 
 /*------------back to top-------------*/

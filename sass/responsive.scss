@@ -24,6 +24,7 @@ tab rotate
 
     .header ul.navbar-nav li .dropdown-menu {
         margin: 0;
+        padding: 10px 0;
     }
 
 
@@ -97,11 +98,6 @@ tab rotate
     }
 
     // blog
-    .ts-blog .single-blog .post-meta-date {
-        right: 25%;
-    }
-
-
 
     .ts-blog .single-blog h3 {
         font-size: 18px;
@@ -204,17 +200,12 @@ tab device
         padding: 240px 0 100px;
     }
 
-    .about-area .banner-btn-area-area {
+    .about-area .btn-area {
         margin-bottom: 50px;
     }
 
-    .cta-area h2 {
+    .cta-area h3 {
         font-size: 30px;
-    }
-
-    .ts-blog .single-blog .post-meta-date {
-        right: 65%;
-        top: 12%;
     }
 
     .header.sticky .navbar {
@@ -232,6 +223,9 @@ tab device
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
+    .top-info li {
+        margin-bottom: 8px;
+    }
 
     .topbar-transparent {
         text-align: center;
@@ -241,7 +235,7 @@ small device /mobile sm and large
         padding: 20px 0;
     }
 
-    .about-area .banner-btn-area-area {
+    .about-area .btn-area {
         margin-bottom: 50px;
     }
 
@@ -251,7 +245,7 @@ small device /mobile sm and large
     }
 
     .header .navbar {
-        padding: 90px 0;
+        padding: 110px 0;
     }
 
     .navbar-light .navbar-toggler-icon {
@@ -300,6 +294,14 @@ small device /mobile sm and large
         width: 100%;
     }
 
+    .header ul.navbar-nav li .dropdown-menu {
+        padding: 10px 0;
+    }
+
+    .header ul.navbar-nav li .dropdown-menu li a {
+        padding: 12px 30px;
+    }
+
     ul.navbar-nav li a i,
     .dropdown-submenu>a:after {
         background: #000;
@@ -313,7 +315,7 @@ small device /mobile sm and large
 
     ul.navbar-nav>li {
         display: block;
-        padding-left: 20px !important;
+        // padding-left: 20px !important;
         padding-right: 20px !important;
     }
 
@@ -337,11 +339,15 @@ small device /mobile sm and large
         display: none;
     }
 
-    .cta-area h2 {
+    .cta-area {
+        padding: 20px 0;
+    }
+
+    .cta-area .column-title {
         font-size: 35px;
     }
 
-    .cta-area .banner-btn-area {
+    .cta-area .btn-area {
         text-align: center;
     }
 
@@ -351,16 +357,13 @@ small device /mobile sm and large
 
     .ts-features .ts-features-text p {
         padding-left: 30px;
+        margin-top: 50px;
     }
 
     .ts-features .ts-features-text p::after {
         left: 0;
     }
 
-    .ts-blog .single-blog .post-meta-date {
-        top: 13%;
-        right: 55%;
-    }
 
     .ts-footer .footer-social li a i {
         width: 28px;

@@ -11,7 +11,8 @@ tab rotate
   .header.header-transparent ul.navbar-nav {
     margin-right: 55px; }
   .header ul.navbar-nav li .dropdown-menu {
-    margin: 0; }
+    margin: 0;
+    padding: 10px 0; }
   .header ul.navbar-nav > li > a {
     font-size: 13px; }
   .banner-item .banner-content-wrap {
@@ -45,8 +46,6 @@ tab rotate
   .ts-features .ts-features-text p {
     font-size: 14px;
     margin-top: 20px; }
-  .ts-blog .single-blog .post-meta-date {
-    right: 25%; }
   .ts-blog .single-blog h3 {
     font-size: 18px; } }
 
@@ -111,13 +110,10 @@ tab device
     border-bottom: 0; }
   .banner-item .banner-content-wrap {
     padding: 240px 0 100px; }
-  .about-area .banner-btn-area-area {
+  .about-area .btn-area {
     margin-bottom: 50px; }
-  .cta-area h2 {
+  .cta-area h3 {
     font-size: 30px; }
-  .ts-blog .single-blog .post-meta-date {
-    right: 65%;
-    top: 12%; }
   .header.sticky .navbar {
     padding: 20px 0; }
   .contact {
@@ -127,17 +123,19 @@ tab device
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
+  .top-info li {
+    margin-bottom: 8px; }
   .topbar-transparent {
     text-align: center; }
   .header.sticky .navbar {
     padding: 20px 0; }
-  .about-area .banner-btn-area-area {
+  .about-area .btn-area {
     margin-bottom: 50px; }
   .social-links {
     text-align: center;
     margin-top: 5px; }
   .header .navbar {
-    padding: 90px 0; }
+    padding: 110px 0; }
   .navbar-light .navbar-toggler-icon {
     background-image: none;
     color: #fff;
@@ -166,6 +164,10 @@ small device /mobile sm and large
     border-bottom: unset; }
   .header.header-transparent ul.navbar-nav {
     width: 100%; }
+  .header ul.navbar-nav li .dropdown-menu {
+    padding: 10px 0; }
+  .header ul.navbar-nav li .dropdown-menu li a {
+    padding: 12px 30px; }
   ul.navbar-nav li a i,
   .dropdown-submenu > a:after {
     background: #000;
@@ -177,7 +179,6 @@ small device /mobile sm and large
     text-align: center; }
   ul.navbar-nav > li {
     display: block;
-    padding-left: 20px !important;
     padding-right: 20px !important; }
   ul.navbar-nav li a {
     line-height: normal !important;
@@ -191,19 +192,19 @@ small device /mobile sm and large
     display: none; }
   .nav-search {
     display: none; }
-  .cta-area h2 {
+  .cta-area {
+    padding: 20px 0; }
+  .cta-area .column-title {
     font-size: 35px; }
-  .cta-area .banner-btn-area {
+  .cta-area .btn-area {
     text-align: center; }
   .ts-features .section-title {
     font-size: 30px; }
   .ts-features .ts-features-text p {
-    padding-left: 30px; }
+    padding-left: 30px;
+    margin-top: 50px; }
   .ts-features .ts-features-text p::after {
     left: 0; }
-  .ts-blog .single-blog .post-meta-date {
-    top: 13%;
-    right: 55%; }
   .ts-footer .footer-social li a i {
     width: 28px;
     height: 28px;

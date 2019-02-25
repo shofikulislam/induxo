@@ -12,10 +12,10 @@
    2.   Hero Area
    3.   funfact
    4.   Testimonial Area
-   5.    About Area
-   6.    Features Area
-   7.    Clients Area
-   8.    video popup
+   5.   About Area
+   6.   Features Area
+   7.   partners Area
+   8.   video popup
   
 */
 
@@ -48,11 +48,11 @@ jQuery(function ($) {
       });
 
    }
-      /* ----------------------------------------------------------- */
+   /* ----------------------------------------------------------- */
    /*  Site search
     /* ----------------------------------------------------------- */
 
-    $('.nav-search').on('click', function () {
+   $('.nav-search').on('click', function () {
       $('.search-block').fadeIn(350);
       $(this).fadeOut(350);
    });
@@ -81,7 +81,7 @@ jQuery(function ($) {
    /* ---------------------------------------------
                      Testimonial Area
    ------------------------------------------------ */
-   $(".testimonial-content-wrap").owlCarousel({
+   $(".testimonial-carousel").owlCarousel({
       items: 1,
       loop: true,
       autoplay: true,
@@ -94,7 +94,7 @@ jQuery(function ($) {
       navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
 
    });
-    /* ---------------------------------------------
+   /* ---------------------------------------------
                      About Area
    ------------------------------------------------ */
 
@@ -125,7 +125,7 @@ jQuery(function ($) {
       }
 
    });
-     /* ---------------------------------------------
+   /* ---------------------------------------------
                      Features Area
    ------------------------------------------------ */
 
@@ -158,11 +158,11 @@ jQuery(function ($) {
 
    });
 
-     /* ---------------------------------------------
+   /* ---------------------------------------------
                      Clients Area
    ------------------------------------------------ */
 
-   $(".clients-carousel").owlCarousel({
+   $(".partners-carousel").owlCarousel({
 
       loop: true,
       autoplay: true,
