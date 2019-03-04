@@ -99,10 +99,6 @@
       padding: 45px 0;
       border-bottom: 1px solid #4D4542;
       padding-bottom: 0;
-
-      .header-quote {
-         margin-top: -10px;
-      }
    }
 
    .navbar-brand {
@@ -279,6 +275,10 @@
             >a {
                color: $white-color;
                line-height: 72px;
+
+               &:hover {
+                  color: #ff5c23;
+               }
             }
 
          }
@@ -434,7 +434,7 @@
    .search-close {
       color: #fff;
       position: absolute;
-      top: -60px;
+      top: -52px;
       right: 0px;
       font-size: 32px;
       cursor: pointer;
@@ -486,14 +486,14 @@
    }
 
 
-   .banner-content-wrap {
+   .banner-content {
       padding: 325px 0 182px;
       z-index: 1;
       position: relative;
 
       .banner-info {
          font-size: 14px;
-         font-weight: 600;
+         font-weight: 700;
          line-height: 24px;
          margin-bottom: 25px;
          color: #000;
@@ -549,7 +549,7 @@
    ts funfact 
  ==================================*/
 .ts-funfact {
-   margin-top: -65px;
+   margin-top: -70px;
    z-index: 2;
    position: relative;
 
@@ -629,7 +629,14 @@
          color: $white-color;
       }
    }
+
 }
+
+.bg-bottom {
+   background-size: 100% !important;
+   background-position: center bottom !important;
+}
+
 
 .ts-about-image-wrapper.owl-carousel.owl-theme .owl-nav [class*=owl-] {
    top: 20px;
@@ -652,7 +659,7 @@
       height: 200px;
    }
 
-   .title-bg-small {
+   .title-bg-none {
       background: none;
       padding-left: 0;
       color: #ff5c23;
@@ -664,11 +671,6 @@
       padding-bottom: 0;
       margin-bottom: 0;
 
-   }
-
-   span {
-      font-size: 48px;
-      color: $white-color;
    }
 }
 
@@ -687,7 +689,7 @@
       }
    }
 
-   .ts-service-wrapper {
+   .ts-service {
       position: relative;
       margin-top: 25px;
 
@@ -714,6 +716,7 @@
 ===========================*/
 .ts-facts-area {
    background: $primary-color;
+   overflow: hidden;
 
    [class*=col] {
       padding: 0;
@@ -721,10 +724,12 @@
 
    .intro-video {
       position: relative;
+      height: 100%;
 
-      img {
-         height: 540px;
-         width: 100%;
+      .intro-bg {
+         @include background-content();
+         height: 100%;
+         min-height: 450px;
       }
    }
 
@@ -741,15 +746,14 @@
       }
    }
 
-   .intro-content-wrap {
+   .intro-right-content {
+      max-width: 560px;
       padding: 95px 85px 65px 50px;
       overflow: hidden;
       height: 100%;
 
-      h2 {
-         span {
-            color: #fff;
-         }
+      .title-white {
+         color: #fff;
       }
 
       .column-title {
@@ -775,11 +779,11 @@
          margin-bottom: 30px;
       }
 
-      .inro-icon {
+      .ts-inro {
          margin-left: 15px;
       }
 
-      .single-intro {
+      .intro-icon {
          margin-bottom: 30px;
 
          span {
@@ -787,6 +791,7 @@
             color: #fff;
             font-size: 18px;
             font-family: $open-sans;
+            font-weight: 700;
          }
       }
    }
@@ -796,18 +801,15 @@
       features area
 ===========================*/
 .ts-features {
-   .column-title {
-      margin-bottom: 80px;
-   }
+   @include background-content();
 
-   .ts-features-text {
+   .ts-features-content {
       p {
          position: relative;
-         padding-left: 140px;
 
          &::after {
             position: absolute;
-            left: 6%;
+            left: -10%;
             top: 0;
             width: 1px;
             height: 100%;
@@ -841,7 +843,7 @@
          }
 
          &:hover {
-            .project-content-detail {
+            .project-info {
                opacity: 1;
             }
 
@@ -860,14 +862,14 @@
             color: $white-color;
          }
 
-         .project-content-wrap {
+         .project-content {
             position: absolute;
             left: 30px;
             bottom: 0;
 
          }
 
-         .project-content-detail {
+         .project-info {
             background: #ff5c23;
             padding: 60px 30px;
             overflow: hidden;
@@ -932,9 +934,6 @@
 
       .single-testimonial {
          .testimonial-footer {
-            display: flex;
-            align-items: center;
-            margin-left: 35%;
             margin-top: 50px;
 
             h3 {
@@ -959,7 +958,6 @@
 
             .client-info {
                margin-left: 15px;
-               display: inline-block;
             }
          }
 
@@ -976,7 +974,7 @@
       background: none;
       color: #9f9f9f;
       font-size: 40px;
-      top: 50%;
+      top: 15%;
       right: -50px;
 
       &:hover {
@@ -1021,11 +1019,21 @@
       }
    }
 
-   .col-lg-4 {
+   .blog-box {
       border: 1px solid #d2d2d2;
 
       &:hover {
          background-color: #edf5f8;
+      }
+   }
+
+   .two {
+      border-left-color: #fff;
+      border-right-color: #fff;
+
+      &:hover {
+         border-left-color: #edf5f8;
+         border-right-color: #edf5f8;
       }
    }
 }
@@ -1044,16 +1052,13 @@
       justify-content: center;
    }
 
-   .owl-carousel .owl-item img {
-      width: auto;
-   }
 }
 
 /*==========================
       footer area
 ===========================*/
 .ts-footer {
-   background: #071431;
+   @include background-content();
    padding-top: 80px;
 
    p {
@@ -1113,7 +1118,7 @@
 
    }
 
-   .list-week {
+   .week-schedule {
       li {
          width: 100%;
          color: #d5d5d5;
@@ -1176,9 +1181,7 @@
          margin-top: 5px;
          color: #fff;
 
-         span {
-            color: #ff5c23;
-         }
+
       }
    }
 }
@@ -1187,7 +1190,7 @@
 .BackTo {
    background: $primary-color none repeat scroll 0 0;
    border-radius: 50%;
-   bottom: 35px;
+   bottom: 18px;
    color: #979797;
    cursor: pointer;
    height: 44px;

@@ -17,27 +17,22 @@ tab rotate
         }
     }
 
+    // 
 
     .header.header-transparent ul.navbar-nav {
         margin-right: 55px;
     }
-
-    .header ul.navbar-nav li .dropdown-menu {
-        margin: 0;
-        padding: 10px 0;
-    }
-
 
     .header ul.navbar-nav>li>a {
         font-size: 13px;
     }
 
     // banner item
-    .banner-item .banner-content-wrap {
+    .banner-item .banner-content {
         padding: 300px 0 182px;
     }
 
-    .banner-item .banner-content-wrap .banner-title {
+    .banner-item .banner-content .banner-title {
         font-size: 45px;
     }
 
@@ -47,7 +42,7 @@ tab rotate
     }
 
     .search-block {
-        right: 15%;
+        right: 14%;
     }
 
     .search-block .search-close {
@@ -82,20 +77,16 @@ tab rotate
     }
 
     // facts
-    .ts-facts-area .intro-content-wrap {
+    .ts-facts-area .intro-right-content {
         padding: 95px 50px 64px 50px;
         display: inline-block;
     }
 
-    .ts-facts-area .intro-content-wrap .single-intro span {
+    .ts-facts-area .intro-right-content .intro-icon span {
         font-size: 15px;
     }
 
-    // features
-    .ts-features .ts-features-text p {
-        font-size: 14px;
-        margin-top: 20px;
-    }
+
 
     // blog
 
@@ -165,6 +156,7 @@ tab device
 
     .header.header-transparent ul.navbar-nav {
         width: 100%;
+        margin-top: 20px;
     }
 
     ul.navbar-nav li a i,
@@ -196,7 +188,7 @@ tab device
         border-bottom: 0;
     }
 
-    .banner-item .banner-content-wrap {
+    .banner-item .banner-content {
         padding: 240px 0 100px;
     }
 
@@ -216,7 +208,9 @@ tab device
         margin-bottom: 30px;
     }
 
-
+    .ts-facts-area .intro-right-content {
+        margin-left: 100px;
+    }
 }
 
 /*==========================
@@ -292,6 +286,7 @@ small device /mobile sm and large
 
     .header.header-transparent ul.navbar-nav {
         width: 100%;
+        margin-top: 20px;
     }
 
     .header ul.navbar-nav li .dropdown-menu {
@@ -355,12 +350,12 @@ small device /mobile sm and large
         font-size: 30px;
     }
 
-    .ts-features .ts-features-text p {
+    .ts-features .ts-features-content p {
         padding-left: 30px;
         margin-top: 50px;
     }
 
-    .ts-features .ts-features-text p::after {
+    .ts-features .ts-features-content p::after {
         left: 0;
     }
 

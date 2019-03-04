@@ -201,8 +201,16 @@ section,
    margin-bottom: 70px;
 }
 
+.mb-80 {
+   margin-bottom: 80px;
+}
+
 .mb-100 {
    margin-bottom: 100px;
+}
+
+.mb-110 {
+   margin-bottom: 110px;
 }
 
 .mt-60 {
@@ -350,7 +358,7 @@ img.pull-right {
 
 .title-bg-small {
    font-size: 14px;
-   font-weight: 600;
+   font-weight: 700;
    line-height: 24px;
    margin-bottom: 25px;
    color: #fff;
@@ -358,6 +366,7 @@ img.pull-right {
    display: inline-block;
    padding: 3px 18px;
    text-transform: uppercase;
+   font-family: $open-sans;
 
 }
 
@@ -371,11 +380,10 @@ img.pull-right {
 
    span {
       font-weight: 700;
-      font-size: 36px;
-      text-transform: capitalize;
-      color: $black-color;
    }
+
 }
+
 
 .column-title {
    margin-bottom: 30px;
