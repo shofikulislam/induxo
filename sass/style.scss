@@ -345,7 +345,7 @@
       top: 0;
       width: 100%;
       z-index: 99;
-      background: rgba(26, 24, 49, .95);
+      background: #101010;
       padding: 0;
 
       .navbar {
@@ -371,6 +371,10 @@
    }
 }
 
+ul.navbar-nav >
+li.active > a {
+  color: #ff5c23 !important;
+}
 .dropdown-menu.show {
    display: none;
 }
@@ -1201,6 +1205,10 @@
    z-index: 9;
    display: block;
    padding: 8px 0;
+   transition: all .3s;
+   &:hover{
+      background: #000;
+   }
 
    a {
       color: #fff;
