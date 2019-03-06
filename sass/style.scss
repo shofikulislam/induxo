@@ -31,6 +31,8 @@
 @import 'variable';
 @import 'mixin';
 @import 'owlcarousel';
+@import 'timeline';
+@import 'map';
 /*  */
 
 /* Top Bar
@@ -47,6 +49,7 @@
    padding: 12px 0;
    line-height: normal;
    transition: 350ms;
+   
 
    li {
       color: #fff;
@@ -60,6 +63,15 @@
          font-weight: 400;
          font-size: 16px;
          top: 0;
+      }
+   }
+}
+.alice-blue-bg{
+   background: $alice-blue-bg;
+   li{
+      color: $gray-fourty-color;
+      i{
+         color: $gray-fourty-color;
       }
    }
 }
@@ -301,17 +313,14 @@
    }
 
    &.header-classic {
-      .navbar {
-         padding: 0;
-      }
+      background: $white-color;
+      position: relative;
 
       ul.navbar-nav {
-         margin-top: 5px;
 
          >li {
             >a {
                color: #222222;
-               line-height: 74px;
 
                &:hover {
                   color: $primary-color;
@@ -323,19 +332,14 @@
                   color: $primary-color;
                }
             }
-
-            &.header-quote {
-               .quote-btn {
-                  background: $primary-color;
-                  color: $white-color;
-
-                  &:hover {
-                     box-shadow: none;
-                     background: $primary-dark;
-                  }
-               }
-            }
          }
+      }
+      .nav-search {
+         color: #222222;
+
+      }
+      .search-block .search-close{
+         color: #222;
       }
    }
 
@@ -365,12 +369,13 @@
 
       &.header-classic {
          background: #fff;
-         box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
          padding: 0;
       }
    }
 }
-
+// .header.header-classic .navbar{
+//    border-bottom: none;
+// }
 ul.navbar-nav >
 li.active > a {
   color: #ff5c23 !important;
@@ -397,17 +402,15 @@ li.active > a {
 
 .nav-search {
    cursor: pointer;
-   // top: 32px;
    right: 17%;
    color: #fff;
    width: 30px;
    text-align: center;
-   // margin-top: 32px;
-   // margin-left: 30px;
    position: absolute;
 
    i {
       font-size: 20px;
+      font-weight: 900;
    }
 }
 
@@ -438,7 +441,7 @@ li.active > a {
    .search-close {
       color: #fff;
       position: absolute;
-      top: -52px;
+      top: -58px;
       right: 0px;
       font-size: 32px;
       cursor: pointer;
@@ -473,7 +476,7 @@ li.active > a {
    padding: 0;
 }
 
-.banner-item {
+.slider-item {
    min-height: 820px;
    color: #fff;
    @include background-content();
@@ -490,12 +493,12 @@ li.active > a {
    }
 
 
-   .banner-content {
+   .slider-content {
       padding: 325px 0 182px;
       z-index: 1;
       position: relative;
 
-      .banner-info {
+      .slider-info {
          font-size: 14px;
          font-weight: 700;
          line-height: 24px;
@@ -508,7 +511,7 @@ li.active > a {
 
       }
 
-      .banner-title {
+      .slider-title {
          font-size: 48px;
          font-weight: 300;
          color: $white-color;
@@ -521,7 +524,7 @@ li.active > a {
 
       }
 
-      .banner-btn-area {
+      .slider-btn-area {
          .btn {
             height: 55px;
             line-height: 55px;
@@ -537,7 +540,7 @@ li.active > a {
 }
 
 
-.banner-img {
+.slider-img {
    img {
       max-width: 100%;
       margin-top: 237px;
@@ -548,6 +551,24 @@ li.active > a {
    animation: fadeInRight 300ms both;
    animation-duration: 1.3s;
 }
+// ==========banner area============//
+
+
+.banner-area {
+   .banner-bg{
+      @include background-content();
+      height: 320px;
+   }
+   .row {
+      height: 320px;
+   }
+   .banner-title {
+      font-size: 64px;
+      color: #fff;
+   }
+}
+
+
 
 /*==================================
    ts funfact 
@@ -652,6 +673,28 @@ li.active > a {
       color: #fff;
    }
 }
+/*==========================
+      history area
+===========================*/
+.history-area {
+   background: #f7f9fb;
+   .events-content{
+      background: #fff;
+   }
+   .events-content img.pull-left {
+      margin-bottom: 0;
+   }
+   .ts-timeline-content {
+      width: 50%;
+      float: right;
+      
+   }
+   .time-line-left-content img {
+      width: 45%;
+   }
+}
+
+
 
 /*==========================
       CTA area
@@ -685,34 +728,25 @@ li.active > a {
    padding-bottom: 40px;
 
    .single-service {
-      text-align: left;
-      position: relative;
-
-      img {
-         // width: 100%;
-      }
+      text-align: left; 
+      img{
+         width: 100%;
+      }  
    }
+   .service-box-info {
+      padding-left: 80px;
 
-   .ts-service {
-      position: relative;
-      margin-top: 25px;
-
-      img {
-         position: absolute;
-         left: 0;
-      }
-
-      .service-content {
-         position: relative;
-         padding-left: 90px;
-
-         h3 {
-            font-size: 24px;
-            font-weight: 600;
+      .ts-title {
+         a{
+            color: #252a37;
+            &:hover{
+               color: #ff5c23;
+            }
          }
+         
       }
-
    }
+ 
 }
 
 /*==========================
@@ -916,9 +950,7 @@ li.active > a {
    @include background-content();
    height: 540px;
 
-   .title-bg-small {
-      background: $primary-color;
-   }
+   
 
    .section-title {
       color: $white-color;
@@ -990,7 +1022,9 @@ li.active > a {
       left: -50px;
    }
 }
-
+.primary-bg {
+   background: $primary-color;
+}
 /*==========================
       blog area
 ===========================*/
@@ -1019,6 +1053,9 @@ li.active > a {
 
          a {
             color: #101010;
+            &:hover {
+               color: #ff5c23;
+            }
          }
       }
    }
@@ -1056,6 +1093,84 @@ li.active > a {
       justify-content: center;
    }
 
+}
+
+/*==========================
+      team area
+===========================*/
+.team-area{
+   .ts-team-wrapper {
+      position: relative;
+  }
+  .ts-team-img {position: relative;}
+  
+  .ts-team-img:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: rgba(255, 92, 35, 0.7);
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all ease-in-out .3s;
+      -o-transition: all ease-in-out .3s;
+      transition: all ease-in-out .3s;
+  }
+  
+  .ts-team-info {
+      border: 1px solid #d8d8d8;
+      border-top: none;
+      padding: 30px 0;
+  }
+  
+  .team-social {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      margin-left: -50px;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transition: all ease-in-out .3s;
+      -o-transition: all ease-in-out .3s;
+      transition: all ease-in-out .3s;
+      }
+  .team-social li {
+      list-style: none;
+      display: inline-block;
+  }
+  
+  .team-social li a {margin-right: 15px;font-size: 24px;color: #fff;}
+  
+  
+  
+  .team-name {
+      font-size: 24px;
+      color: #101010;
+  }
+  .team-designation {
+   margin-bottom: 0;
+}
+  
+  .ts-team-wrapper:hover .team-social {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  .ts-team-wrapper:hover .ts-team-img:after {
+      opacity: 1;
+      visibility: visible;
+  }
+  
+  .ts-team-wrapper:hover .team-name {
+      color: #ff5c23;
+  }
+  
+  .ts-team-wrapper:hover .ts-team-info {
+      border: none;
+      box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
+  }
 }
 
 /*==========================

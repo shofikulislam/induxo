@@ -110,21 +110,21 @@
 }
 
 /* owl carousel home slider */
-.owl-stage-outer .owl-item.active .banner-item .banner-content p {
+.owl-stage-outer .owl-item.active .slider-item .slider-content p {
    -webkit-animation-name: slideInUp;
    animation-name: slideInUp;
    -webkit-animation-duration: 1.5s;
    animation-duration: 1.5s;
 }
 
-.owl-stage-outer .owl-item.active .banner-item .banner-content h1 {
+.owl-stage-outer .owl-item.active .slider-item .slider-content h1 {
    -webkit-animation-name: slideInUp;
    animation-name: slideInUp;
    -webkit-animation-duration: 2s;
    animation-duration: 2s;
 }
 
-.owl-stage-outer .owl-item.active .banner-item .banner-content .btn {
+.owl-stage-outer .owl-item.active .slider-item .slider-content .btn {
    -webkit-animation-name: slideInUp;
    animation-name: slideInUp;
    -webkit-animation-duration: 2.5s;

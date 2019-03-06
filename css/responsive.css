@@ -12,9 +12,9 @@ tab rotate
     margin-right: 55px; }
   .header ul.navbar-nav > li > a {
     font-size: 13px; }
-  .banner-item .banner-content {
+  .slider-item .slider-content {
     padding: 300px 0 182px; }
-  .banner-item .banner-content .banner-title {
+  .slider-item .slider-content .slider-title {
     font-size: 45px; }
   .nav-search {
     right: 15%; }
@@ -33,8 +33,6 @@ tab rotate
     font-size: 14px; }
   .ts-single-funfact {
     padding: 0 30px; }
-  .single-service-img img {
-    width: 100%; }
   .ts-facts-area .intro-right-content {
     padding: 95px 50px 64px 50px;
     display: inline-block; }
@@ -103,7 +101,7 @@ tab device
     min-width: 350px; }
   ul.navbar-nav li:last-child a {
     border-bottom: 0; }
-  .banner-item .banner-content {
+  .slider-item .slider-content {
     padding: 240px 0 100px; }
   .about-area .btn-area {
     margin-bottom: 50px; }

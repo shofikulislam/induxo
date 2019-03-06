@@ -1,0 +1,117 @@
+.location {
+  display: inline-block; }
+
+.location_indicator {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-color: #1868dd;
+  border-radius: 50%; }
+
+.location_indicator::before,
+.location_indicator::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-color: #1868dd;
+  border-radius: 50%;
+  -webkit-animation: pulse 3s infinite cubic-bezier(0.4, 0, 1, 1) both;
+  animation: pulse 3s infinite cubic-bezier(0.4, 0, 1, 1) both; }
+
+.location_indicator::after {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(12, 90, 219, 0.2);
+    box-shadow: 0 0 0 0 rgba(12, 90, 219, 0.2); }
+  70% {
+    -webkit-box-shadow: 0 0 0 30px rgba(12, 90, 219, 0);
+    box-shadow: 0 0 0 30px rgba(12, 90, 219, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(12, 90, 219, 0);
+    box-shadow: 0 0 0 0 rgba(12, 90, 219, 0); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(12, 90, 219, 0.2);
+    box-shadow: 0 0 0 0 rgba(12, 90, 219, 0.2); }
+  70% {
+    -webkit-box-shadow: 0 0 0 30px rgba(12, 90, 219, 0);
+    box-shadow: 0 0 0 30px rgba(12, 90, 219, 0); }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(12, 90, 219, 0);
+    box-shadow: 0 0 0 0 rgba(12, 90, 219, 0); } }
+
+.tooltip.show {
+  opacity: 1; }
+
+.tooltip .tooltip-inner {
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); }
+
+.location-name {
+  font-size: 1.05882rem;
+  font-weight: 500;
+  margin-bottom: 10px; }
+
+.location-des {
+  margin-bottom: 0;
+  color: #000000; }
+
+.tooltip .arrow::before {
+  color: #FFFFFF; }
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.bs-tooltip-top .arrow::before {
+  border-top-color: currentColor; }
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: currentColor; }
+
+.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.bs-tooltip-right .arrow::before {
+  border-right-color: currentColor; }
+
+.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.bs-tooltip-left .arrow::before {
+  border-left-color: currentColor; }
+
+.location-groups {
+  position: relative; }
+
+.location-groups .location {
+  position: absolute; }
+
+.location-groups .location.location-1 {
+  top: 29%;
+  left: 15%; }
+
+.location-groups .location.location-2 {
+  top: 51%;
+  left: 50%; }
+
+.location-groups .location.location-3 {
+  right: 20%;
+  top: 20%; }
+
+.location-groups .location.location-4 {
+  top: 10%;
+  left: 35%; }
+
+.location-groups .location.location-5 {
+  left: 30%;
+  bottom: 24%; }
