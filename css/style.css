@@ -549,6 +549,7 @@ Main Components
   top: 0;
   z-index: 2;
   text-align: center;
+  font-weight: 700;
   padding-top: 15px;
   color: #101010;
   /* fix bug on Safari - text flickering while timeline translates */
@@ -559,7 +560,8 @@ Main Components
   transform: translateZ(0);
   background: none;
   padding: 5px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-size: 20px; }
 
 .cd-horizontal-timeline .events a.selected {
   color: #ff5c23;
@@ -1342,7 +1344,8 @@ li.active > a {
     margin-bottom: 0; }
   .history-area .ts-timeline-content {
     width: 50%;
-    float: right; }
+    float: right;
+    padding: 43px 0; }
   .history-area .time-line-left-content img {
     width: 45%; }
 

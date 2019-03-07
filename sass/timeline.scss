@@ -93,7 +93,7 @@ Main Components
     top: 0;
     z-index: 2;
     text-align: center;
-    // font-size: 1.3rem;
+    font-weight: 700;
     padding-top: 15px;
     color: #101010;
     /* fix bug on Safari - text flickering while timeline translates */
@@ -105,6 +105,7 @@ Main Components
     background:none;
     padding:5px;
     margin-top:20px;
+    font-size: 20px;
   }
   .cd-horizontal-timeline .events a.selected {
     
