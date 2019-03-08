@@ -317,8 +317,7 @@ img.pull-right {
   background: #101010;
   display: inline-block;
   padding: 3px 18px;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif; }
+  text-transform: uppercase; }
 
 .section-title,
 .column-title {
@@ -1114,6 +1113,12 @@ Main Components
     background: #fff;
     padding: 0; }
 
+.header.header-classic .navbar {
+  border-bottom: none; }
+
+.header.header-classic.sticky .navbar {
+  border-bottom: 1px solid #4D4542; }
+
 ul.navbar-nav >
 li.active > a {
   color: #ff5c23 !important; }
@@ -1241,18 +1246,15 @@ li.active > a {
   -webkit-animation-duration: 1.3s;
   animation-duration: 1.3s; }
 
-.banner-area .banner-bg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 320px; }
-
-.banner-area .row {
-  height: 320px; }
-
 .banner-area .banner-title {
   font-size: 64px;
   color: #fff; }
+
+.banner-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 138px 0; }
 
 /*==================================
    ts funfact 
@@ -1355,9 +1357,8 @@ li.active > a {
 .cta-area {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
-  .cta-area .row {
-    height: 200px; }
+  background-position: center center;
+  padding: 44px 0; }
   .cta-area .title-bg-none {
     background: none;
     padding-left: 0;
@@ -1622,7 +1623,8 @@ li.active > a {
       team area
 ===========================*/
 .team-area .ts-team-wrapper {
-  position: relative; }
+  position: relative;
+  display: inline-block; }
 
 .team-area .ts-team-img {
   position: relative; }

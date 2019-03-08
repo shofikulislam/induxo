@@ -49,7 +49,7 @@
    padding: 12px 0;
    line-height: normal;
    transition: 350ms;
-   
+
 
    li {
       color: #fff;
@@ -66,11 +66,14 @@
       }
    }
 }
-.alice-blue-bg{
+
+.alice-blue-bg {
    background: $alice-blue-bg;
-   li{
+
+   li {
       color: $gray-fourty-color;
-      i{
+
+      i {
          color: $gray-fourty-color;
       }
    }
@@ -334,11 +337,13 @@
             }
          }
       }
+
       .nav-search {
          color: #222222;
 
       }
-      .search-block .search-close{
+
+      .search-block .search-close {
          color: #222;
       }
    }
@@ -373,13 +378,20 @@
       }
    }
 }
-// .header.header-classic .navbar{
-//    border-bottom: none;
-// }
-ul.navbar-nav >
-li.active > a {
-  color: #ff5c23 !important;
+
+// -------------header classic----------------
+.header.header-classic .navbar {
+   border-bottom: none;
 }
+
+.header.header-classic.sticky .navbar {
+   border-bottom: 1px solid #4D4542;
+}
+
+ul.navbar-nav>li.active>a {
+   color: #ff5c23 !important;
+}
+
 .dropdown-menu.show {
    display: none;
 }
@@ -551,21 +563,20 @@ li.active > a {
    animation: fadeInRight 300ms both;
    animation-duration: 1.3s;
 }
+
 // ==========banner area============//
 
 
 .banner-area {
-   .banner-bg{
-      @include background-content();
-      height: 320px;
-   }
-   .row {
-      height: 320px;
-   }
    .banner-title {
       font-size: 64px;
       color: #fff;
    }
+}
+
+.banner-bg {
+   @include background-content();
+   padding: 138px 0;
 }
 
 
@@ -673,23 +684,28 @@ li.active > a {
       color: #fff;
    }
 }
+
 /*==========================
       history area
 ===========================*/
 .history-area {
    background: #f7f9fb;
-   .events-content{
+
+   .events-content {
       background: #fff;
    }
+
    .events-content img.pull-left {
       margin-bottom: 0;
    }
+
    .ts-timeline-content {
       width: 50%;
       float: right;
       padding: 43px 0;
-      
+
    }
+
    .time-line-left-content img {
       width: 45%;
    }
@@ -702,10 +718,7 @@ li.active > a {
 ===========================*/
 .cta-area {
    @include background-content();
-
-   .row {
-      height: 200px;
-   }
+   padding: 44px 0;
 
    .title-bg-none {
       background: none;
@@ -729,25 +742,28 @@ li.active > a {
    padding-bottom: 40px;
 
    .single-service {
-      text-align: left; 
-      img{
+      text-align: left;
+
+      img {
          width: 100%;
-      }  
+      }
    }
+
    .service-box-info {
       padding-left: 80px;
 
       .ts-title {
-         a{
+         a {
             color: #252a37;
-            &:hover{
+
+            &:hover {
                color: #ff5c23;
             }
          }
-         
+
       }
    }
- 
+
 }
 
 /*==========================
@@ -951,7 +967,7 @@ li.active > a {
    @include background-content();
    height: 540px;
 
-   
+
 
    .section-title {
       color: $white-color;
@@ -1023,9 +1039,11 @@ li.active > a {
       left: -50px;
    }
 }
+
 .primary-bg {
    background: $primary-color;
 }
+
 /*==========================
       blog area
 ===========================*/
@@ -1054,6 +1072,7 @@ li.active > a {
 
          a {
             color: #101010;
+
             &:hover {
                color: #ff5c23;
             }
@@ -1099,13 +1118,17 @@ li.active > a {
 /*==========================
       team area
 ===========================*/
-.team-area{
+.team-area {
    .ts-team-wrapper {
       position: relative;
-  }
-  .ts-team-img {position: relative;}
-  
-  .ts-team-img:after {
+      display: inline-block;
+   }
+
+   .ts-team-img {
+      position: relative;
+   }
+
+   .ts-team-img:after {
       position: absolute;
       left: 0;
       top: 0;
@@ -1118,15 +1141,15 @@ li.active > a {
       -webkit-transition: all ease-in-out .3s;
       -o-transition: all ease-in-out .3s;
       transition: all ease-in-out .3s;
-  }
-  
-  .ts-team-info {
+   }
+
+   .ts-team-info {
       border: 1px solid #d8d8d8;
       border-top: none;
       padding: 30px 0;
-  }
-  
-  .team-social {
+   }
+
+   .team-social {
       position: absolute;
       top: 35%;
       left: 50%;
@@ -1136,42 +1159,48 @@ li.active > a {
       -webkit-transition: all ease-in-out .3s;
       -o-transition: all ease-in-out .3s;
       transition: all ease-in-out .3s;
-      }
-  .team-social li {
+   }
+
+   .team-social li {
       list-style: none;
       display: inline-block;
-  }
-  
-  .team-social li a {margin-right: 15px;font-size: 24px;color: #fff;}
-  
-  
-  
-  .team-name {
+   }
+
+   .team-social li a {
+      margin-right: 15px;
+      font-size: 24px;
+      color: #fff;
+   }
+
+
+
+   .team-name {
       font-size: 24px;
       color: #101010;
-  }
-  .team-designation {
-   margin-bottom: 0;
-}
-  
-  .ts-team-wrapper:hover .team-social {
+   }
+
+   .team-designation {
+      margin-bottom: 0;
+   }
+
+   .ts-team-wrapper:hover .team-social {
       opacity: 1;
       visibility: visible;
-  }
-  
-  .ts-team-wrapper:hover .ts-team-img:after {
+   }
+
+   .ts-team-wrapper:hover .ts-team-img:after {
       opacity: 1;
       visibility: visible;
-  }
-  
-  .ts-team-wrapper:hover .team-name {
+   }
+
+   .ts-team-wrapper:hover .team-name {
       color: #ff5c23;
-  }
-  
-  .ts-team-wrapper:hover .ts-team-info {
+   }
+
+   .ts-team-wrapper:hover .ts-team-info {
       border: none;
       box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
-  }
+   }
 }
 
 /*==========================
@@ -1322,7 +1351,8 @@ li.active > a {
    display: block;
    padding: 8px 0;
    transition: all .3s;
-   &:hover{
+
+   &:hover {
       background: #000;
    }
 
