@@ -131,7 +131,15 @@ tab device
   .header.header-classic ul.navbar-nav > li > a {
     color: #fff; }
   .team-area .team-name {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .ts-annoual-report .annual-report-tabs-item .column-title {
+    font-size: 35px; }
+  .ts-annoual-report .column-title {
+    font-size: 23px; }
+  .contact-box .btn {
+    padding: 0 22px; }
+  .ts-annoual-report .contact-box-wrapper {
+    padding: 30px 8px; } }
 
 /*==========================
 small device /mobile sm and large
@@ -248,4 +256,9 @@ small device /mobile sm and large
   .ts-footer .footer-social li a i {
     width: 28px;
     height: 28px;
-    line-height: 28px; } }
+    line-height: 28px; }
+  .ts-annoual-report .annual-report-tabs-item .column-title {
+    font-size: 35px;
+    line-height: 50px; }
+  .ts-annoual-report .column-title {
+    font-size: 23px; } }

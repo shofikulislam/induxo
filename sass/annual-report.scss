@@ -1,0 +1,86 @@
+/*==========================
+      Annual Report
+===========================*/
+.ts-annoual-report {
+    .annual-report-tabs-item {
+        padding-left: 15px;
+    }
+
+    .ts-annoual-report-menu {
+        background: #edf5f8;
+    }
+
+    .ts-annoual-report-menu a {
+        border-bottom: 1px solid #fff;
+        color: #252a37;
+    }
+
+    .nav .nav-link.active {
+        background: #ff5c23;
+        color: #fff;
+    }
+
+    .ts-annoual-report-menu a:last-child {
+        border-bottom: none;
+    }
+
+    .ts-annoual-report-menu a:hover {
+        background: #ff5c23;
+        color: #fff;
+    }
+
+    .contact-box {
+        @include background-content();
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .contact-box-wrapper p {
+        color: #fff;
+    }
+
+    .contact-box-wrapper {
+        padding: 29px;
+    }
+
+    .graph-wrapper {
+        margin-top: 50px;
+    }
+
+    .annual-report-tabs-item .column-title {
+        font-size: 48px;
+    }
+
+    .column-title {
+        font-size: 30px;
+    }
+
+    .ts-archive {
+        margin-top: 50px;
+    }
+
+    .archive-list li {
+        list-style: none;
+        padding: 10px 0;
+        border-bottom: 1px solid #edf5f8;
+    }
+
+    .archive-list li a {
+        color: #101010;
+        margin-left: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .archive-list li a:hover {
+        color: #ff5c23;
+    }
+
+    .archive-list li:hover {
+        color: #ff5c23;
+    }
+
+    .archive-list {
+        border-top: 1px solid #edf5f8;
+    }
+}

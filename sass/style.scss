@@ -33,6 +33,8 @@
 @import 'owlcarousel';
 @import 'timeline';
 @import 'map';
+@import 'chart';
+@import 'annual-report';
 /*  */
 
 /* Top Bar
@@ -577,6 +579,18 @@ ul.navbar-nav>li.active>a {
 .banner-bg {
    @include background-content();
    padding: 138px 0;
+   position: relative;
+   z-index: 1;
+   &::after{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+      }
 }
 
 
@@ -807,9 +821,7 @@ ul.navbar-nav>li.active>a {
       overflow: hidden;
       height: 100%;
 
-      .title-white {
-         color: #fff;
-      }
+      
 
       .column-title {
          margin-bottom: 60px;

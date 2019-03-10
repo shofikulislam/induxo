@@ -329,6 +329,10 @@ img.pull-right {
   .column-title span {
     font-weight: 700; }
 
+.title-small {
+  font-size: 30px;
+  font-weight: 700; }
+
 .column-title {
   margin-bottom: 30px; }
 
@@ -336,14 +340,21 @@ img.pull-right {
   font-size: 24px;
   font-weight: 600; }
 
-.overlay:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: rgba(0, 0, 0, 0.5); }
+.title-white {
+  color: #fff; }
+
+.overlay {
+  position: relative;
+  z-index: 1; }
+  .overlay:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0, 0, 0, 0.68);
+    z-index: -1; }
 
 /*-- Owl slide common --*/
 .hero-area.owl-carousel .owl-nav {
@@ -497,7 +508,8 @@ Main Components
   height: 100%;
   overflow: hidden; }
 
-.cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
+.cd-horizontal-timeline .events-wrapper::after,
+.cd-horizontal-timeline .events-wrapper::before {
   /* these are used to create a shadow effect at the sides of the timeline */ }
 
 .cd-horizontal-timeline .events {
@@ -686,17 +698,20 @@ Main Components
   -o-transform: translateX(0);
   transform: translateX(0); }
 
-.cd-horizontal-timeline .events-content li.enter-right, .cd-horizontal-timeline .events-content li.leave-right {
+.cd-horizontal-timeline .events-content li.enter-right,
+.cd-horizontal-timeline .events-content li.leave-right {
   -webkit-animation-name: cd-enter-right;
   -moz-animation-name: cd-enter-right;
   animation-name: cd-enter-right; }
 
-.cd-horizontal-timeline .events-content li.enter-left, .cd-horizontal-timeline .events-content li.leave-left {
+.cd-horizontal-timeline .events-content li.enter-left,
+.cd-horizontal-timeline .events-content li.leave-left {
   -webkit-animation-name: cd-enter-left;
   -moz-animation-name: cd-enter-left;
   animation-name: cd-enter-left; }
 
-.cd-horizontal-timeline .events-content li.leave-right, .cd-horizontal-timeline .events-content li.leave-left {
+.cd-horizontal-timeline .events-content li.leave-right,
+.cd-horizontal-timeline .events-content li.leave-left {
   -webkit-animation-direction: reverse;
   -moz-animation-direction: reverse;
   animation-direction: reverse; }
@@ -889,6 +904,103 @@ Main Components
 .location-wrapper .location.location-7 {
   left: 87%;
   bottom: 14%; }
+
+/* Chart
+================================================== */
+.graph-caption {
+  text-align: center; }
+
+.graph-caption span {
+  position: relative;
+  padding: 0 25px; }
+
+.graph-caption span:after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  content: '';
+  background: #ff5c23;
+  border-radius: 50%;
+  margin-top: -7px; }
+
+span.blue-round:after {
+  background: #2154cf; }
+
+#graph {
+  width: 85%;
+  height: 350px;
+  margin: 0 auto; }
+
+/*==========================
+      Annual Report
+===========================*/
+.ts-annoual-report .annual-report-tabs-item {
+  padding-left: 15px; }
+
+.ts-annoual-report .ts-annoual-report-menu {
+  background: #edf5f8; }
+
+.ts-annoual-report .ts-annoual-report-menu a {
+  border-bottom: 1px solid #fff;
+  color: #252a37; }
+
+.ts-annoual-report .nav .nav-link.active {
+  background: #ff5c23;
+  color: #fff; }
+
+.ts-annoual-report .ts-annoual-report-menu a:last-child {
+  border-bottom: none; }
+
+.ts-annoual-report .ts-annoual-report-menu a:hover {
+  background: #ff5c23;
+  color: #fff; }
+
+.ts-annoual-report .contact-box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.ts-annoual-report .contact-box-wrapper p {
+  color: #fff; }
+
+.ts-annoual-report .contact-box-wrapper {
+  padding: 29px; }
+
+.ts-annoual-report .graph-wrapper {
+  margin-top: 50px; }
+
+.ts-annoual-report .annual-report-tabs-item .column-title {
+  font-size: 48px; }
+
+.ts-annoual-report .column-title {
+  font-size: 30px; }
+
+.ts-annoual-report .ts-archive {
+  margin-top: 50px; }
+
+.ts-annoual-report .archive-list li {
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #edf5f8; }
+
+.ts-annoual-report .archive-list li a {
+  color: #101010;
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 600; }
+
+.ts-annoual-report .archive-list li a:hover {
+  color: #ff5c23; }
+
+.ts-annoual-report .archive-list li:hover {
+  color: #ff5c23; }
+
+.ts-annoual-report .archive-list {
+  border-top: 1px solid #edf5f8; }
 
 /*  */
 /* Top Bar
@@ -1119,8 +1231,7 @@ Main Components
 .header.header-classic.sticky .navbar {
   border-bottom: 1px solid #4D4542; }
 
-ul.navbar-nav >
-li.active > a {
+ul.navbar-nav > li.active > a {
   color: #ff5c23 !important; }
 
 .dropdown-menu.show {
@@ -1254,7 +1365,18 @@ li.active > a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 138px 0; }
+  padding: 138px 0;
+  position: relative;
+  z-index: 1; }
+  .banner-bg::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1; }
 
 /*==================================
    ts funfact 
@@ -1416,8 +1538,6 @@ li.active > a {
     padding: 95px 85px 65px 50px;
     overflow: hidden;
     height: 100%; }
-    .ts-facts-area .intro-right-content .title-white {
-      color: #fff; }
     .ts-facts-area .intro-right-content .column-title {
       margin-bottom: 60px;
       color: #fff;
