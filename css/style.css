@@ -974,7 +974,8 @@ span.blue-round:after {
   margin-top: 50px; }
 
 .ts-annual-report .annual-report-tabs-item .column-title {
-  font-size: 48px; }
+  font-size: 48px;
+  line-height: 60px; }
 
 .ts-annual-report .column-title {
   font-size: 30px; }
