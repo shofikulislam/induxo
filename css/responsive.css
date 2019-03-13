@@ -132,14 +132,16 @@ tab device
     color: #fff; }
   .team-area .team-name {
     font-size: 20px; }
-  .ts-annoual-report .annual-report-tabs-item .column-title {
+  .ts-annual-report .annual-report-tabs-item .column-title {
     font-size: 35px; }
-  .ts-annoual-report .column-title {
+  .ts-annual-report .column-title {
     font-size: 23px; }
-  .contact-box .btn {
+  .ads-box .btn {
     padding: 0 22px; }
-  .ts-annoual-report .contact-box-wrapper {
-    padding: 30px 8px; } }
+  .ads-box-wrapper {
+    padding: 30px 8px; }
+  .ads-box-wrapper .column-title {
+    font-size: 25px; } }
 
 /*==========================
 small device /mobile sm and large
@@ -257,8 +259,8 @@ small device /mobile sm and large
     width: 28px;
     height: 28px;
     line-height: 28px; }
-  .ts-annoual-report .annual-report-tabs-item .column-title {
+  .ts-annual-report .annual-report-tabs-item .column-title {
     font-size: 35px;
     line-height: 50px; }
-  .ts-annoual-report .column-title {
+  .ts-annual-report .column-title {
     font-size: 23px; } }

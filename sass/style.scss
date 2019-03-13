@@ -35,6 +35,7 @@
 @import 'map';
 @import 'chart';
 @import 'annual-report';
+@import 'career';
 /*  */
 
 /* Top Bar
@@ -791,29 +792,7 @@ ul.navbar-nav>li.active>a {
       padding: 0;
    }
 
-   .intro-video {
-      position: relative;
-      height: 100%;
-
-      .intro-bg {
-         @include background-content();
-         height: 100%;
-         min-height: 450px;
-      }
-   }
-
-   .video-icon {
-      i {
-         font-size: 80px;
-         margin-left: -25px;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         color: $white-color;
-         line-height: 50px;
-         margin-top: -25px;
-      }
-   }
+   
 
    .intro-right-content {
       max-width: 560px;
@@ -860,6 +839,32 @@ ul.navbar-nav>li.active>a {
             font-family: $open-sans;
             font-weight: 700;
          }
+      }
+   }
+}
+.intro-video {
+   position: relative;
+   height: 100%;
+
+   .intro-bg {
+      @include background-content();
+      height: 100%;
+      min-height: 450px;
+   }
+}
+
+.video-icon {
+   i {
+      font-size: 80px;
+      margin-left: -25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: $white-color;
+      line-height: 50px;
+      margin-top: -25px;
+      &:hover {
+         color: #ff5c23;
       }
    }
 }
@@ -1123,6 +1128,12 @@ ul.navbar-nav>li.active>a {
       height: 60px;
       align-items: center;
       justify-content: center;
+      img {
+         filter: grayscale(1);
+         filter: grayscale(100%);
+         filter: grayscale(100%);
+         filter: gray;
+      }
    }
 
 }

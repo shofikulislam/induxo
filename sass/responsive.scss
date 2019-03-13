@@ -17,8 +17,6 @@ tab rotate
         }
     }
 
-    // 
-
     .header.header-transparent ul.navbar-nav {
         margin-right: 55px;
     }
@@ -84,17 +82,6 @@ tab rotate
         font-size: 15px;
     }
 
-    // history ara
-    // .history-area .ts-timeline-content {
-    //     padding: 9px 0;
-    // }
-    // .history-area .events-content img.pull-left {
-    //     display: none;
-    // }
-
-    // .history-area .ts-timeline-content {
-    //     width: 100%;
-    // }
     .history-area .ts-timeline-content {
         padding: 0;
     }
@@ -269,8 +256,11 @@ tab device
         padding: 0 22px;
     }
 
-    .ts-annual-report .ads-box-wrapper {
+    .ads-box-wrapper {
         padding: 30px 8px;
+    }
+    .ads-box-wrapper .column-title {
+        font-size: 25px;
     }
 }
 

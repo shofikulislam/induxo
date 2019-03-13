@@ -1,0 +1,82 @@
+/* Collapse */
+.card {
+  border: none; }
+
+.card-header {
+  background: none !important;
+  color: #626c84;
+  padding: 20px 0 21px; }
+
+.card-header i {
+  background: #2154cf;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 15px; }
+
+.card-body {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: none; }
+
+.btn-link {
+  color: #626c84;
+  padding: 0; }
+
+.btn-link:hover {
+  text-decoration: none; }
+
+.btn:focus {
+  text-decoration: none !important; }
+
+h5.mb-0 {
+  margin-left: 0; }
+
+h5.mb-0 button {
+  position: relative;
+  padding-left: 55px; }
+
+h5.mb-0 button.collapsed {
+  color: #333; }
+
+h5.mb-0 button:before {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 3px; }
+
+h5.mb-0 button:before,
+h5.mb-0 button .collapsed:before {
+  font-family: "FontAwesome";
+  position: absolute;
+  z-index: 0;
+  font-size: 16px;
+  left: 0px;
+  padding: 0 5px;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: #2154cf; }
+
+.card-header button p {
+  margin-bottom: 0px;
+  font-weight: 500;
+  color: #626c84; }
+
+h5.mb-0 button p:hover {
+  color: #2154cf; }
+
+h5.mb-0 button:before {
+  content: "\f068"; }
+
+h5.mb-0 button.collapsed:before {
+  content: "\f067"; }
+
+.card-header .collapsed .show {
+  border-bottom: none; }

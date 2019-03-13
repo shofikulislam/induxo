@@ -193,6 +193,10 @@ section,
    margin-bottom: 30px;
 }
 
+.mb-50 {
+   margin-bottom: 50px;
+}
+
 .mb-60 {
    margin-bottom: 60px;
 }
@@ -213,8 +217,8 @@ section,
    margin-bottom: 110px;
 }
 
-.mt-60 {
-   margin-top: 60px;
+.mt-100 {
+   margin-top: 100px;
 }
 
 .mrb-30 {
@@ -354,6 +358,11 @@ img.pull-right {
    &:hover {
       color: $primary-color;
    }
+}
+.btn-white {
+   background: #fff;
+   color: #2c2c2c;
+   box-shadow: none;
 }
 
 .title-bg-small {
