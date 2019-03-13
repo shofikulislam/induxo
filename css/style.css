@@ -936,70 +936,70 @@ span.blue-round:after {
 /*==========================
       Annual Report
 ===========================*/
-.ts-annoual-report .annual-report-tabs-item {
+.ts-annual-report .annual-report-tabs-item {
   padding-left: 15px; }
 
-.ts-annoual-report .ts-annoual-report-menu {
+.ts-annual-report .ts-annual-report-menu {
   background: #edf5f8; }
 
-.ts-annoual-report .ts-annoual-report-menu a {
+.ts-annual-report .ts-annual-report-menu a {
   border-bottom: 1px solid #fff;
   color: #252a37; }
 
-.ts-annoual-report .nav .nav-link.active {
+.ts-annual-report .nav .nav-link.active {
   background: #ff5c23;
   color: #fff; }
 
-.ts-annoual-report .ts-annoual-report-menu a:last-child {
+.ts-annual-report .ts-annual-report-menu a:last-child {
   border-bottom: none; }
 
-.ts-annoual-report .ts-annoual-report-menu a:hover {
+.ts-annual-report .ts-annual-report-menu a:hover {
   background: #ff5c23;
   color: #fff; }
 
-.ts-annoual-report .contact-box {
+.ts-annual-report .ads-box {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   margin-top: 50px;
   margin-bottom: 50px; }
 
-.ts-annoual-report .contact-box-wrapper p {
+.ts-annual-report .ads-box-wrapper p {
   color: #fff; }
 
-.ts-annoual-report .contact-box-wrapper {
+.ts-annual-report .ads-box-wrapper {
   padding: 29px; }
 
-.ts-annoual-report .graph-wrapper {
+.ts-annual-report .graph-wrapper {
   margin-top: 50px; }
 
-.ts-annoual-report .annual-report-tabs-item .column-title {
+.ts-annual-report .annual-report-tabs-item .column-title {
   font-size: 48px; }
 
-.ts-annoual-report .column-title {
+.ts-annual-report .column-title {
   font-size: 30px; }
 
-.ts-annoual-report .ts-archive {
+.ts-annual-report .ts-archive {
   margin-top: 50px; }
 
-.ts-annoual-report .archive-list li {
+.ts-annual-report .archive-list li {
   list-style: none;
   padding: 10px 0;
   border-bottom: 1px solid #edf5f8; }
 
-.ts-annoual-report .archive-list li a {
+.ts-annual-report .archive-list li a {
   color: #101010;
   margin-left: 15px;
   font-size: 16px;
   font-weight: 600; }
 
-.ts-annoual-report .archive-list li a:hover {
+.ts-annual-report .archive-list li a:hover {
   color: #ff5c23; }
 
-.ts-annoual-report .archive-list li:hover {
+.ts-annual-report .archive-list li:hover {
   color: #ff5c23; }
 
-.ts-annoual-report .archive-list {
+.ts-annual-report .archive-list {
   border-top: 1px solid #edf5f8; }
 
 /*  */

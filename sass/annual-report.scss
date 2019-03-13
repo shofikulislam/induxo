@@ -1,16 +1,16 @@
 /*==========================
       Annual Report
 ===========================*/
-.ts-annoual-report {
+.ts-annual-report {
     .annual-report-tabs-item {
         padding-left: 15px;
     }
 
-    .ts-annoual-report-menu {
+    .ts-annual-report-menu {
         background: #edf5f8;
     }
 
-    .ts-annoual-report-menu a {
+    .ts-annual-report-menu a {
         border-bottom: 1px solid #fff;
         color: #252a37;
     }
@@ -20,26 +20,26 @@
         color: #fff;
     }
 
-    .ts-annoual-report-menu a:last-child {
+    .ts-annual-report-menu a:last-child {
         border-bottom: none;
     }
 
-    .ts-annoual-report-menu a:hover {
+    .ts-annual-report-menu a:hover {
         background: #ff5c23;
         color: #fff;
     }
 
-    .contact-box {
+    .ads-box {
         @include background-content();
         margin-top: 50px;
         margin-bottom: 50px;
     }
 
-    .contact-box-wrapper p {
+    .ads-box-wrapper p {
         color: #fff;
     }
 
-    .contact-box-wrapper {
+    .ads-box-wrapper {
         padding: 29px;
     }
 
