@@ -5,7 +5,7 @@
   margin-top: -60px;
   position: relative;
   overflow: hidden;
-  z-index: 999;
+  z-index: 1;
   padding-top: 0;
 }
 .ts-contact-form {
@@ -64,6 +64,9 @@
 .ts-form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   appearance: none;
+}
+.ts-btn-wraper .btn {
+  width: 100%;
 }
 /* ts-branches */
 .contact-bg{
