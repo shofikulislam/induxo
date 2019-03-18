@@ -68,18 +68,19 @@
         border-top: 1px solid #edf5f8;
     }
 }
-.ads-box {
+/* ads box / sidebar*/
+.ads-box, .sidebar{
     @include background-content();
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: #ff5c23;
 }
 
-.ads-box-wrapper p {
+.ads-box-wrapper p, .widget p {
     color: #fff;
 }
 
-.ads-box-wrapper {
+.ads-box-wrapper, .widget {
     padding: 29px;
     position: relative;
     z-index: 1;
@@ -92,6 +93,14 @@
         bottom: 30px;
         z-index: -1;
     }
+}
+.widget svg{
+    position: absolute;
+        width: 150px;
+        height: 150px;
+        right: -50px;
+        bottom: 30px;
+        z-index: -1;
 }
 .column-title-large {
     font-size: 48px;

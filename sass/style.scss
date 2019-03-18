@@ -36,6 +36,7 @@
 @import 'chart';
 @import 'annual-report';
 @import 'career';
+@import 'contact';
 /*  */
 
 /* Top Bar
@@ -381,7 +382,9 @@
       }
    }
 }
-
+.dropdown-menu li.active a {
+   color: #fc6a2a !important;
+ }
 // -------------header classic----------------
 .header.header-classic .navbar {
    border-bottom: none;

@@ -1,0 +1,89 @@
+/* Contact 
+======================================= */
+/* Contact 1 */
+.ts-contact {
+  margin-top: -60px;
+  position: relative;
+  overflow: hidden;
+  z-index: 999;
+  padding-top: 0;
+}
+.ts-contact-form {
+  padding: 85px;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  padding-bottom: 86px;
+}
+
+.ts-branches-item:last-child {
+  margin-bottom: 0;
+}
+
+.ts-form .form-control {
+  border: 1px solid #e8e8eb;
+  border-radius: 0;
+  margin-bottom: 25px;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+.ts-form .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.ts-form .form-control.message-box {
+  resize: none;
+  height: 133px;
+  margin-bottom: 35px;
+}
+
+.ts-form .form-control::-webkit-input-placeholder {
+  color: #bdbdbd;
+}
+
+.ts-form .form-control:-ms-input-placeholder {
+  color: #bdbdbd;
+}
+
+.ts-form .form-control::-ms-input-placeholder {
+  color: #bdbdbd;
+}
+
+.ts-form .form-control::placeholder {
+  color: #bdbdbd;
+}
+
+.ts-form .form-submit {
+  text-align: right;
+}
+
+.ts-form input::-webkit-outer-spin-button,
+.ts-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* ts-branches */
+.contact-bg{
+  background: #f7f9fb;
+}
+.branches-title {
+  font-size: 24px;
+}
+.ts-branches .column-title {
+  margin-bottom: 50px;
+}
+
+.ts-branches-contact-info p {
+  margin-bottom: 0;
+}
+
+.ts-branches-item {
+  margin-bottom: 60px;
+}
+
+.ts-branches {
+  padding: 60px 35px;
+}

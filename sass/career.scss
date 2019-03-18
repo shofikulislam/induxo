@@ -1,6 +1,6 @@
 /* career*/
 .ts-career {
-  .ads-box {
+  .ads-box, .sidebar {
     margin-top: 0;
   }
 }
@@ -64,14 +64,17 @@
 
 /* Collapse */
 .card {
-  border: none;
+  
   text-align: left;
+  border: none;
 }
 
 .card-header {
   background: none !important;
   color: #626c84;
   padding: 20px 0 21px;
+  border-top: 1px solid rgba(0,0,0,.125) !important;
+  border-bottom: none;
 }
 
 .card-header i {
@@ -87,7 +90,6 @@
 }
 
 .card-body {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   border-top: none;
 }
 
@@ -158,6 +160,10 @@ h5.mb-0 button.collapsed:before {
 .card-header .collapsed .show {
   border-bottom: none;
 }
+#accordion .card:last-child {
+  border-bottom: 1px solid rgba(0,0,0,.125) !important;
+}
+
 
 /*jobs*/
 .ts-jobs {
@@ -191,6 +197,9 @@ h5.mb-0 button.collapsed:before {
   background: #fff !important;
 }
 
-.ads-icon path {
+.sidebar-icon path {
   fill: #fff;
+}
+.side-btn {
+  margin-top: 20px;
 }

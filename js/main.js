@@ -40,7 +40,7 @@ jQuery(function ($) {
    /* ---------------------------------------------
                      Menu Toggle 
    ------------------------------------------------ */
-
+  
    if ($(window).width() < 991) {
       $(".navbar-nav li a").on("click", function () {
          $(this).parent("li").find(".dropdown-menu").slideToggle();

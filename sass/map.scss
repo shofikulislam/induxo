@@ -140,3 +140,17 @@
     bottom: 14%;
 }
 
+/*=================================
+  start map section
+ =================================*/
+ .ts-map-sec {
+    overflow: hidden;
+    position: relative; }
+  
+  .ts-maps-wraper .map {
+    height: 500px;
+    width: 100%; }
+    .ts-maps-wraper .map iframe {
+      width: 100%;
+      height: 100%; }
+  

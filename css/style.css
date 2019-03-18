@@ -110,6 +110,9 @@ ul {
   padding: 0;
   margin: 0; }
 
+iframe {
+  border: none; }
+
 a:link,
 a:visited {
   text-decoration: none; }
@@ -914,6 +917,21 @@ Main Components
   left: 87%;
   bottom: 14%; }
 
+/*=================================
+  start map section
+ =================================*/
+.ts-map-sec {
+  overflow: hidden;
+  position: relative; }
+
+.ts-maps-wraper .map {
+  height: 500px;
+  width: 100%; }
+
+.ts-maps-wraper .map iframe {
+  width: 100%;
+  height: 100%; }
+
 /* Chart
 ================================================== */
 .graph-caption {
@@ -995,7 +1013,8 @@ span.blue-round:after {
 .ts-annual-report .archive-list {
   border-top: 1px solid #edf5f8; }
 
-.ads-box {
+/* ads box / sidebar*/
+.ads-box, .sidebar {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1003,15 +1022,15 @@ span.blue-round:after {
   margin-bottom: 50px;
   background-color: #ff5c23; }
 
-.ads-box-wrapper p {
+.ads-box-wrapper p, .widget p {
   color: #fff; }
 
-.ads-box-wrapper {
+.ads-box-wrapper, .widget {
   padding: 29px;
   position: relative;
   z-index: 1;
   overflow: hidden; }
-  .ads-box-wrapper img {
+  .ads-box-wrapper img, .widget img {
     position: absolute;
     width: 150px;
     height: 150px;
@@ -1019,11 +1038,19 @@ span.blue-round:after {
     bottom: 30px;
     z-index: -1; }
 
+.widget svg {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: -50px;
+  bottom: 30px;
+  z-index: -1; }
+
 .column-title-large {
   font-size: 48px; }
 
 /* career*/
-.ts-career .ads-box {
+.ts-career .ads-box, .ts-career .sidebar {
   margin-top: 0; }
 
 .ts-career-wrapper .column-title-large {
@@ -1073,13 +1100,15 @@ span.blue-round:after {
 
 /* Collapse */
 .card {
-  border: none;
-  text-align: left; }
+  text-align: left;
+  border: none; }
 
 .card-header {
   background: none !important;
   color: #626c84;
-  padding: 20px 0 21px; }
+  padding: 20px 0 21px;
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+  border-bottom: none; }
 
 .card-header i {
   background: #2154cf;
@@ -1093,7 +1122,6 @@ span.blue-round:after {
   margin-right: 15px; }
 
 .card-body {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   border-top: none; }
 
 h5.mb-0 {
@@ -1152,6 +1180,9 @@ h5.mb-0 button.collapsed:before {
 .card-header .collapsed .show {
   border-bottom: none; }
 
+#accordion .card:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important; }
+
 /*jobs*/
 .ts-jobs {
   background: #edf5f8; }
@@ -1175,8 +1206,88 @@ h5.mb-0 button.collapsed:before {
 .white-bg {
   background: #fff !important; }
 
-.ads-icon path {
+.sidebar-icon path {
   fill: #fff; }
+
+.side-btn {
+  margin-top: 20px; }
+
+/* Contact 
+======================================= */
+/* Contact 1 */
+.ts-contact {
+  margin-top: -60px;
+  position: relative;
+  overflow: hidden;
+  z-index: 999;
+  padding-top: 0; }
+
+.ts-contact-form {
+  padding: 85px;
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  padding-bottom: 86px; }
+
+.ts-branches-item:last-child {
+  margin-bottom: 0; }
+
+.ts-form .form-control {
+  border: 1px solid #e8e8eb;
+  border-radius: 0;
+  margin-bottom: 25px;
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 13px; }
+
+.ts-form .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.ts-form .form-control.message-box {
+  resize: none;
+  height: 133px;
+  margin-bottom: 35px; }
+
+.ts-form .form-control::-webkit-input-placeholder {
+  color: #bdbdbd; }
+
+.ts-form .form-control:-ms-input-placeholder {
+  color: #bdbdbd; }
+
+.ts-form .form-control::-ms-input-placeholder {
+  color: #bdbdbd; }
+
+.ts-form .form-control::placeholder {
+  color: #bdbdbd; }
+
+.ts-form .form-submit {
+  text-align: right; }
+
+.ts-form input::-webkit-outer-spin-button,
+.ts-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none; }
+
+/* ts-branches */
+.contact-bg {
+  background: #f7f9fb; }
+
+.branches-title {
+  font-size: 24px; }
+
+.ts-branches .column-title {
+  margin-bottom: 50px; }
+
+.ts-branches-contact-info p {
+  margin-bottom: 0; }
+
+.ts-branches-item {
+  margin-bottom: 60px; }
+
+.ts-branches {
+  padding: 60px 35px; }
 
 /*  */
 /* Top Bar
@@ -1400,6 +1511,9 @@ h5.mb-0 button.collapsed:before {
   .header.sticky.header-classic {
     background: #fff;
     padding: 0; }
+
+.dropdown-menu li.active a {
+  color: #fc6a2a !important; }
 
 .header.header-classic .navbar {
   border-bottom: none; }
