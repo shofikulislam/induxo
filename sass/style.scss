@@ -878,22 +878,7 @@ ul.navbar-nav>li.active>a {
 .ts-features {
    @include background-content();
 
-   .ts-features-content {
-      p {
-         position: relative;
-
-         &::after {
-            position: absolute;
-            left: -10%;
-            top: 0;
-            width: 1px;
-            height: 100%;
-            content: '';
-            background: #bebebe;
-         }
-      }
-
-   }
+   
 
    .features-project {
       [class*=col] {
@@ -978,6 +963,22 @@ ul.navbar-nav>li.active>a {
    .owl-carousel.owl-theme .owl-nav [class*=owl-prev] {
       left: -50px;
    }
+}
+.ts-features-content {
+   p {
+      position: relative;
+
+      &::after {
+         position: absolute;
+         left: -10%;
+         top: 0;
+         width: 1px;
+         height: 100%;
+         content: '';
+         background: #bebebe;
+      }
+   }
+
 }
 
 /*==========================

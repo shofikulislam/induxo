@@ -1184,9 +1184,6 @@ h5.mb-0 button.collapsed:before {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important; }
 
 /*jobs*/
-.ts-jobs {
-  background: #edf5f8; }
-
 .ts-jobs-wrapper {
   padding: 50px;
   padding-bottom: 0; }
@@ -1868,16 +1865,6 @@ ul.navbar-nav > li.active > a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
-  .ts-features .ts-features-content p {
-    position: relative; }
-    .ts-features .ts-features-content p::after {
-      position: absolute;
-      left: -10%;
-      top: 0;
-      width: 1px;
-      height: 100%;
-      content: '';
-      background: #bebebe; }
   .ts-features .features-project [class*=col] {
     padding: 0; }
   .ts-features .features-project .single-project {
@@ -1933,6 +1920,17 @@ ul.navbar-nav > li.active > a {
       color: #ff5c23; }
   .ts-features .owl-carousel.owl-theme .owl-nav [class*=owl-prev] {
     left: -50px; }
+
+.ts-features-content p {
+  position: relative; }
+  .ts-features-content p::after {
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    content: '';
+    background: #bebebe; }
 
 /*==========================
       testimonial area
