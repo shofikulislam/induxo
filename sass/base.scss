@@ -426,3 +426,8 @@ img.pull-right {
       z-index: -1;
    }
 }
+.overlay-two{
+   &::before{
+      background: rgba(1, 14, 42, 0.6);
+   }
+}

@@ -139,6 +139,31 @@
     left: 87%;
     bottom: 14%;
 }
+.location_indicator.indicator-2::before, .location_indicator.indicator-2::after {
+    animation: pulse 4s infinite cubic-bezier(0.4, 0, 1, 1) both;
+    -webkit-animation: pulse 4s infinite cubic-bezier(0.4, 0, 1, 1) both;
+}
+.location_indicator.indicator-3::before, .location_indicator.indicator-3::after {
+    animation: pulse 5s infinite cubic-bezier(0.5, 0, 1, 1) both;
+    -webkit-animation: pulse 5s infinite cubic-bezier(0.5, 0, 1, 1) both;
+}
+.location_indicator.indicator-4::before, .location_indicator.indicator-4::after {
+    animation: pulse 6s infinite cubic-bezier(0.6, 0, 1, 1) both;
+    -webkit-animation: pulse 6s infinite cubic-bezier(0.6, 0, 1, 1) both;
+}
+.location_indicator.indicator-5::before, .location_indicator.indicator-5::after {
+    animation: pulse 7s infinite cubic-bezier(0.7, 0, 1, 1) both;
+    -webkit-animation: pulse 7s infinite cubic-bezier(0.7, 0, 1, 1) both;
+}
+.location_indicator.indicator-6::before, .location_indicator.indicator-6::after {
+    animation: pulse 8s infinite cubic-bezier(0.8, 0, 1, 1) both;
+    -webkit-animation: pulse 8s infinite cubic-bezier(0.8, 0, 1, 1) both;
+}
+.location_indicator.indicator-7::before, .location_indicator.indicator-7::after {
+    animation: pulse 9s infinite cubic-bezier(0.9, 0, 1, 1) both;
+    -webkit-animation: pulse 9s infinite cubic-bezier(0.9, 0, 1, 1) both;
+}
+
 
 /*=================================
   start map section

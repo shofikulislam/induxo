@@ -61,6 +61,12 @@
   margin-top: 30px;
   font-size: 24px;
 }
+.ts-work-process .application-process-img {
+  border: 10px solid #edf5f8;
+}
+.ts-work-process .application-process-img:after {
+  right: 85px;
+}
 
 /* Collapse */
 .card {
