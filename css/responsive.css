@@ -38,10 +38,13 @@ tab rotate
     display: inline-block; }
   .ts-facts-area .intro-right-content .intro-icon span {
     font-size: 15px; }
-  .history-area .ts-timeline-content {
-    padding: 0; }
   .ts-blog .single-blog h3 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .history-area .history-content {
+    padding-left: 35px;
+    padding-right: 0; }
+  .history-area .carousel-indicators li.active:after {
+    display: none; } }
 
 /*==========================
 tab device 
@@ -119,13 +122,19 @@ tab device
     margin-bottom: 30px; }
   .ts-facts-area .intro-right-content {
     margin-left: 100px; }
-  .history-area .ts-timeline-content {
-    padding: 9px 0; }
-  .history-area .events-content img.pull-left {
+  .history-area .carousel-item-next, .history-area .carousel-item-prev, .history-area .carousel-item.active {
+    display: inline-block; }
+  .history-area .carousel-indicators li.active:after {
     display: none; }
-  .history-area .ts-timeline-content {
-    width: 100%;
-    padding: 0; }
+  .history-area .history-content {
+    padding-left: 47px; }
+  .history-area .history-content {
+    max-height: none; }
+  .history-img img {
+    width: 100%; }
+  .history-area .carousel-indicators li {
+    margin-left: 0;
+    margin-right: 0; }
   .ts-team-wrapper {
     text-align: center; }
   .header.header-classic ul.navbar-nav > li > a {
@@ -225,12 +234,6 @@ small device /mobile sm and large
     display: none; }
   .banner-area .banner-title {
     font-size: 40px; }
-  .history-area .ts-timeline-content {
-    padding: 9px 0; }
-  .history-area .events-content img.pull-left {
-    display: none; }
-  .history-area .ts-timeline-content {
-    width: 100%; }
   .cta-area {
     padding: 20px 0; }
   .cta-area .column-title {
@@ -263,4 +266,11 @@ small device /mobile sm and large
     font-size: 35px;
     line-height: 50px; }
   .ts-annual-report .column-title {
-    font-size: 23px; } }
+    font-size: 23px; }
+  .history-area .carousel-item-next, .history-area .carousel-item-prev, .history-area .carousel-item.active {
+    display: inline-block; }
+  .history-area .carousel-indicators li.active:after {
+    display: none; }
+  .history-area .carousel-indicators li {
+    margin-left: 0;
+    margin-right: 0; } }

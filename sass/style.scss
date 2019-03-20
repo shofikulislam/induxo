@@ -710,28 +710,95 @@ ul.navbar-nav>li.active>a {
 .history-area {
    background: #f7f9fb;
 
-   .events-content {
+   .history-content {
       background: #fff;
+      max-height: 400px;
+      padding: 47px;
+      padding-left: 14px;
    }
-
-   .events-content img.pull-left {
-      margin-bottom: 0;
+   .carousel-item {
+      background: #fff;
+      [class*=col] {
+         padding: 0;
+      }
+  }
+   .carousel-indicators {
+      position: relative;
+      top: 30px;
+      left: 0%;
+      z-index: 5;
+      width: 100%;
+      padding-left: 0;
+      margin-left: 0%;
+      text-align: center;
+      list-style: none;
    }
-
-   .ts-timeline-content {
-      width: 50%;
-      float: right;
-      padding: 43px 0;
-
+   .carousel-indicators:before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      top: 15px;
+      background-color: #ddd;
+      z-index: -1;
    }
-
-   .time-line-left-content img {
-      width: 45%;
+   .carousel-indicators li {
+      display: inline-block;
+      width: 70px;
+      height: 35px;
+      line-height: 35px;
+      margin: 0 35px;
+      text-indent: 0px;
+      cursor: pointer;
+      color: #101010;
+      border: 0px solid #fff;
+      border-radius: 0px;
+      margin-top: 40px;
+      font-weight: 700;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      &:before {
+         position: absolute;
+         top: -30px;
+         left: 50%;
+         display: inline-block;
+         width: 12px;
+         height: 12px;
+         content: "";
+         border-radius: 50%;
+         background: #101010;
+         margin-left: -7px;
+     }
    }
+   .carousel-indicators li.active {
+      width: 70px;
+      height: 35px;
+      line-height: 35px;
+      box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
+      color: #ff5c23;
+      background: #fff;
+      &::before{
+         background: #ff5c23;
+      }
+      &:after {
+         position: absolute;
+         top: -34px;
+         left: 44%;
+         display: inline-block;
+         width: 20px;
+         height: 20px;
+         content: "";
+         border-radius: 50%;
+         margin-left: -7px;
+         border: 1px solid #ff5c23;
+    }
+   }
+   .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+      display: flex;
+  }
+  
 }
-
-
-
 /*==========================
       CTA area
 ===========================*/

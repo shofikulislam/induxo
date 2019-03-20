@@ -82,14 +82,20 @@ tab rotate
         font-size: 15px;
     }
 
-    .history-area .ts-timeline-content {
-        padding: 0;
-    }
 
     // blog
 
     .ts-blog .single-blog h3 {
         font-size: 18px;
+    }
+    // history-area
+    .history-area .history-content {
+        padding-left: 35px;
+        padding-right: 0;
+    }
+    
+    .history-area .carousel-indicators li.active:after {
+        display:none;
     }
 }
 
@@ -219,19 +225,25 @@ tab device
     }
 
     // history ara
-    .history-area .ts-timeline-content {
-        padding: 9px 0;
+    .history-area .carousel-item-next, .history-area .carousel-item-prev, .history-area .carousel-item.active {
+        display: inline-block;
     }
-
-    .history-area .events-content img.pull-left {
-        display: none;
+    .history-area .carousel-indicators li.active:after {
+        display:none;
     }
-
-    .history-area .ts-timeline-content {
+    .history-area .history-content {
+        padding-left: 47px;
+    }
+    .history-area .history-content{
+        max-height: none;
+    }
+    .history-img img {
         width: 100%;
-        padding: 0;
     }
-
+    .history-area .carousel-indicators li {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .ts-team-wrapper {
         text-align: center;
     }
@@ -401,19 +413,6 @@ small device /mobile sm and large
         font-size: 40px;
     }
 
-    // history ara
-    .history-area .ts-timeline-content {
-        padding: 9px 0;
-    }
-
-    .history-area .events-content img.pull-left {
-        display: none;
-    }
-
-    .history-area .ts-timeline-content {
-        width: 100%;
-    }
-
     .cta-area {
         padding: 20px 0;
     }
@@ -470,5 +469,16 @@ small device /mobile sm and large
 
     .ts-annual-report .column-title {
         font-size: 23px;
+    }
+    // history ara
+    .history-area .carousel-item-next, .history-area .carousel-item-prev, .history-area .carousel-item.active {
+        display: inline-block;
+    }
+    .history-area .carousel-indicators li.active:after {
+        display:none;
+    }
+    .history-area .carousel-indicators li {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
