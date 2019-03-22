@@ -8,19 +8,24 @@
   z-index: 1;
   padding-top: 0;
 }
+
 .ts-contact-form {
-  padding: 106px;
+  padding: 65px;
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
   background: #fff;
-  padding-bottom: 86px;
+  padding-bottom: 90px;
+  padding-top: 60px;
+
 }
 
-
+.ts-form-group {
+  margin-top: 60px;
+}
 
 .ts-form .form-control {
   border: 1px solid #e8e8eb;
   border-radius: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   height: 45px;
   padding: 10px 20px;
   font-size: 14px;
@@ -35,7 +40,7 @@
 .ts-form .form-control.message-box {
   resize: none;
   height: 133px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .ts-form .form-control::-webkit-input-placeholder {
@@ -63,13 +68,16 @@
   -webkit-appearance: none;
   appearance: none;
 }
+
 select.form-control:not([size]):not([multiple]) {
   height: 50px;
   color: #999999;
 }
+
 .ts-btn-wraper .btn {
   width: 100%;
 }
+
 .ts-form-group .contactMe {
   background: none;
   border: none;
@@ -97,20 +105,26 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 14px;
   height: 45px;
   line-height: 19px;
+  margin-top: 0;
 }
+
 .contactMe .btn:hover {
   color: #fff;
 }
+
 /* ts-widget */
 .ts-widget-item:last-child {
   margin-bottom: 0;
 }
-.contact-bg{
+
+.contact-bg {
   background: #f7f9fb;
 }
+
 .widget-title {
   font-size: 24px;
 }
+
 .ts-widget-area .column-title {
   margin-bottom: 50px;
 }
@@ -125,4 +139,6 @@ select.form-control:not([size]):not([multiple]) {
 
 .ts-widget-area {
   padding: 60px 35px;
+  padding-top: 60px;
+  padding-bottom: 48px;
 }

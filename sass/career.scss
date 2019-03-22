@@ -1,6 +1,8 @@
 /* career*/
 .ts-career {
-  .ads-box, .sidebar {
+
+  .ads-box,
+  .sidebar {
     margin-top: 0;
   }
 }
@@ -26,27 +28,32 @@
   }
 }
 
+/* application process */
+.application-process-wrapper {
+  padding-top: 100px;
+}
+
 .application-process-img {
-  height: 200px;
-  width: 200px;
+  height: 195px;
+  width: 195px;
   text-align: center;
-  border: 5px solid #edf5f8;
+  border: 10px solid #edf5f8;
   border-radius: 50%;
-  line-height: 200px;
+  line-height: 195px;
   position: relative;
   display: table;
   margin: 0 auto;
-}
 
-.application-process-img:after {
-  position: absolute;
-  right: 80px;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-image: url(../images/career/long-arrow.png);
-  content: '';
+  &:after {
+    position: absolute;
+    right: 88px;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/career/long-arrow.png);
+    content: '';
+  }
 }
 
 .application-process-img.first:after {
@@ -55,22 +62,19 @@
 
 .ts-application-process {
   padding: 30px;
+  padding-bottom: 0;
+
+  h3 {
+    margin-top: 30px;
+    font-size: 24px;
+    margin-bottom: 0;
+  }
 }
 
-.ts-application-process h3 {
-  margin-top: 30px;
-  font-size: 24px;
-}
-.ts-work-process .application-process-img {
-  border: 10px solid #edf5f8;
-}
-.ts-work-process .application-process-img:after {
-  right: 85px;
-}
 
 /* Collapse */
 .card {
-  
+
   text-align: left;
   border: none;
 }
@@ -79,7 +83,7 @@
   background: none !important;
   color: #626c84;
   padding: 20px 0 21px;
-  border-top: 1px solid rgba(0,0,0,.125) !important;
+  border-top: 1px solid rgba(0, 0, 0, .125) !important;
   border-bottom: none;
 }
 
@@ -166,8 +170,9 @@ h5.mb-0 button.collapsed:before {
 .card-header .collapsed .show {
   border-bottom: none;
 }
+
 #accordion .card:last-child {
-  border-bottom: 1px solid rgba(0,0,0,.125) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
 }
 
 
@@ -204,6 +209,7 @@ h5.mb-0 button.collapsed:before {
 .sidebar-icon path {
   fill: #fff;
 }
+
 .side-btn {
   margin-top: 20px;
 }

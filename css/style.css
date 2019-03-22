@@ -987,6 +987,9 @@ span.blue-round:after {
   height: 350px;
   margin: 0 auto; }
 
+.morris-hover {
+  z-index: 1; }
+
 /*==========================
       Annual Report
 ===========================*/
@@ -1077,7 +1080,8 @@ span.blue-round:after {
   font-size: 48px; }
 
 /* career*/
-.ts-career .ads-box, .ts-career .sidebar {
+.ts-career .ads-box,
+.ts-career .sidebar {
   margin-top: 0; }
 
 .ts-career-wrapper .column-title-large {
@@ -1094,42 +1098,40 @@ span.blue-round:after {
     width: 50%;
     float: left; }
 
+/* application process */
+.application-process-wrapper {
+  padding-top: 100px; }
+
 .application-process-img {
-  height: 200px;
-  width: 200px;
+  height: 195px;
+  width: 195px;
   text-align: center;
-  border: 5px solid #edf5f8;
+  border: 10px solid #edf5f8;
   border-radius: 50%;
-  line-height: 200px;
+  line-height: 195px;
   position: relative;
   display: table;
   margin: 0 auto; }
-
-.application-process-img:after {
-  position: absolute;
-  right: 80px;
-  top: 50%;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-image: url(../images/career/long-arrow.png);
-  content: ''; }
+  .application-process-img:after {
+    position: absolute;
+    right: 88px;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/career/long-arrow.png);
+    content: ''; }
 
 .application-process-img.first:after {
   display: none; }
 
 .ts-application-process {
-  padding: 30px; }
-
-.ts-application-process h3 {
-  margin-top: 30px;
-  font-size: 24px; }
-
-.ts-work-process .application-process-img {
-  border: 10px solid #edf5f8; }
-
-.ts-work-process .application-process-img:after {
-  right: 85px; }
+  padding: 30px;
+  padding-bottom: 0; }
+  .ts-application-process h3 {
+    margin-top: 30px;
+    font-size: 24px;
+    margin-bottom: 0; }
 
 /* Collapse */
 .card {
@@ -1253,16 +1255,20 @@ h5.mb-0 button.collapsed:before {
   padding-top: 0; }
 
 .ts-contact-form {
-  padding: 106px;
+  padding: 65px;
   -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
   background: #fff;
-  padding-bottom: 86px; }
+  padding-bottom: 90px;
+  padding-top: 60px; }
+
+.ts-form-group {
+  margin-top: 60px; }
 
 .ts-form .form-control {
   border: 1px solid #e8e8eb;
   border-radius: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   height: 45px;
   padding: 10px 20px;
   font-size: 14px; }
@@ -1275,7 +1281,7 @@ h5.mb-0 button.collapsed:before {
 .ts-form .form-control.message-box {
   resize: none;
   height: 133px;
-  margin-bottom: 35px; }
+  margin-bottom: 30px; }
 
 .ts-form .form-control::-webkit-input-placeholder {
   color: #999999; }
@@ -1326,7 +1332,8 @@ select.form-control:not([size]):not([multiple]) {
   font-weight: 700;
   font-size: 14px;
   height: 45px;
-  line-height: 19px; }
+  line-height: 19px;
+  margin-top: 0; }
 
 .contactMe .btn:hover {
   color: #fff; }
@@ -1351,7 +1358,9 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 60px; }
 
 .ts-widget-area {
-  padding: 60px 35px; }
+  padding: 60px 35px;
+  padding-top: 60px;
+  padding-bottom: 48px; }
 
 /*  */
 /* Top Bar
@@ -1893,7 +1902,9 @@ ul.navbar-nav > li.active > a {
       border-radius: 50%;
       margin-left: -7px;
       border: 1px solid #ff5c23; }
-  .history-area .carousel-item-next, .history-area .carousel-item-prev, .history-area .carousel-item.active {
+  .history-area .carousel-item-next,
+  .history-area .carousel-item-prev,
+  .history-area .carousel-item.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -2057,18 +2068,17 @@ ul.navbar-nav > li.active > a {
   .ts-features .owl-carousel.owl-theme .owl-nav [class*=owl-prev] {
     left: -50px; }
 
-.ts-features-content {
-  padding-right: 30px; }
-  .ts-features-content p {
-    position: relative; }
-    .ts-features-content p::after {
-      position: absolute;
-      left: -16%;
-      top: 0;
-      width: 1px;
-      height: 100%;
-      content: '';
-      background: #bebebe; }
+.ts-features-content p {
+  position: relative;
+  padding-left: 140px; }
+  .ts-features-content p::after {
+    position: absolute;
+    left: 35px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    content: '';
+    background: #bebebe; }
 
 /*==========================
       testimonial area

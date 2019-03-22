@@ -88,14 +88,15 @@ tab rotate
     .ts-blog .single-blog h3 {
         font-size: 18px;
     }
+
     // history-area
     .history-area .history-content {
         padding-left: 35px;
         padding-right: 0;
     }
-    
+
     .history-area .carousel-indicators li.active:after {
-        display:none;
+        display: none;
     }
 }
 
@@ -225,25 +226,33 @@ tab device
     }
 
     // history ara
-    .history-area .carousel-item-next, .history-area .carousel-item-prev, .history-area .carousel-item.active {
+    .history-area .carousel-item-next,
+    .history-area .carousel-item-prev,
+    .history-area .carousel-item.active {
         display: inline-block;
     }
+
     .history-area .carousel-indicators li.active:after {
-        display:none;
+        display: none;
     }
+
     .history-area .history-content {
         padding-left: 47px;
     }
-    .history-area .history-content{
+
+    .history-area .history-content {
         max-height: none;
     }
+
     .history-img img {
         width: 100%;
     }
+
     .history-area .carousel-indicators li {
         margin-left: 0;
         margin-right: 0;
     }
+
     .ts-team-wrapper {
         text-align: center;
     }
@@ -264,15 +273,32 @@ tab device
         font-size: 23px;
     }
 
-    .ads-box .btn {
+    .ads-box .btn,
+    .sidebar .btn {
         padding: 0 22px;
     }
 
-    .ads-box-wrapper {
+    .ads-box-wrapper,
+    .widget {
         padding: 30px 8px;
     }
-    .ads-box-wrapper .column-title {
+
+    .ads-box-wrapper .column-title,
+    .sidebar .column-title {
         font-size: 25px;
+    }
+
+
+    .ts-features-content p {
+        padding-left: 20px;
+    }
+
+    .ts-features-content p::after {
+        left: 0;
+    }
+
+    .ts-features-content {
+        text-align: left;
     }
 }
 
@@ -470,15 +496,35 @@ small device /mobile sm and large
     .ts-annual-report .column-title {
         font-size: 23px;
     }
+
     // history ara
-    .history-area .carousel-item-next, .history-area .carousel-item-prev, .history-area .carousel-item.active {
+    .history-area .carousel-item-next,
+    .history-area .carousel-item-prev,
+    .history-area .carousel-item.active {
         display: inline-block;
     }
+
     .history-area .carousel-indicators li.active:after {
-        display:none;
+        display: none;
     }
+
     .history-area .carousel-indicators li {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .ts-features-content p {
+        padding-left: 20px;
+    }
+
+    .ts-features-content p::after {
+        left: 0;
+    }
+
+    .ts-features-content {
+        text-align: left;
+    }
+    .requirement-list li {
+        width: 100%;
     }
 }
