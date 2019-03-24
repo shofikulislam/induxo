@@ -25,8 +25,19 @@
   li {
     width: 50%;
     float: left;
+    margin-bottom: 15px;
   }
 }
+/* ts projects result */
+.ts-projects-result {
+  .requirement-list {
+    margin-top: 20px;
+    li {
+      width: 100%;
+    }
+  }
+}
+
 
 /* application process */
 .application-process-wrapper {

@@ -1,0 +1,68 @@
+/*==========================
+      project details
+===========================*/
+.projects-slider-item {
+    min-height: 550px;
+    color: #fff;
+    @include background-content();
+    -webkit-backface-visibility: hidden;
+    position: relative;
+}
+.list-style-classic {
+    padding: 30px;
+  }
+  .list-style-classic ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .list-style-classic li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .list-style-classic li div {
+    width: 100%;
+  }
+  .list-style-classic li:last-child {
+    margin-bottom: 0;
+  }
+//   .list-style-classic .classic-title {
+//     font-size: 24px;
+//     font-weight: 600;
+//     line-height: 32px;
+//     margin-bottom: 45px;
+//   }
+  
+  .project-info-content {
+    color: #ffffff;
+  }
+  
+  .project-info-label {
+    color: #ffffff;
+  }
+  .title-small-regular {
+    font-weight: 400;
+}
+/*-- Ts result counter --*/
+
+.ts-result-counter {
+  padding: 10px 0px;
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #ff5d34;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+.challenge-wrapper, .result-wrapper {
+  padding-right: 20px;
+}

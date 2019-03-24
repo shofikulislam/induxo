@@ -79,6 +79,23 @@ jQuery(function ($) {
 
    });
    /* ---------------------------------------------
+               projects details slider
+   ------------------------------------------------ */
+
+   $(".ts-projects-slider").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+      nav: true,
+      dots: false,
+      autoplayTimeout: 8000,
+      autoplayHoverPause: true,
+      mouseDrag: false,
+      smartSpeed: 1100,
+      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+
+   });
+   /* ---------------------------------------------
                      Testimonial Area
    ------------------------------------------------ */
    $(".testimonial-carousel").owlCarousel({
@@ -296,4 +313,75 @@ jQuery(function ($) {
       } );
    } );
 
+    /*=====================
+    isotop grid
+    ========================*/
+
+    if ($('.grid').length > 0) {
+      var $portfolioGrid = $('.grid'),
+         colWidth = function () {
+            var w = $portfolioGrid.width(),
+               columnNum = 1,
+               columnWidth = 0;
+            if (w > 1200) {
+               columnNum = 3;
+            } else if (w > 900) {
+               columnNum = 3;
+            } else if (w > 600) {
+               columnNum = 2;
+            } else if (w > 450) {
+               columnNum = 2;
+            } else if (w > 385) {
+               columnNum = 1;
+            }
+            columnWidth = Math.floor(w / columnNum);
+            $portfolioGrid.find('.grid-item').each(function () {
+               var $item = $(this),
+                  multiplier_w = $item.attr('class').match(/grid-item-w(\d)/),
+                  multiplier_h = $item.attr('class').match(/grid-item-h(\d)/),
+                  width = multiplier_w ? columnWidth * multiplier_w[1] : columnWidth,
+                  height = multiplier_h ? columnWidth * multiplier_h[1] * 0.4 - 12 : columnWidth * 0.3;
+               $item.css({
+                  width: width,
+                  //height: height
+               });
+            });
+            return columnWidth;
+         },
+
+         isotope = function () {
+            $portfolioGrid.isotope({
+               resizable: true,
+               itemSelector: '.grid-item',
+               masonry: {
+                  columnWidth: colWidth(),
+                  gutterWidth: 3
+               }
+            });
+         };
+      isotope();
+      $(window).resize(isotope);
+   } // End is_exists
+
+
+    /*=============================================================
+   			gallery
+   	=========================================================================*/
+
+      $('.ts-popup').magnificPopup({
+         type: 'image',
+         closeOnContentClick: false,
+         midClick: true,
+         callbacks: {
+            beforeOpen: function () {
+               this.st.mainClass = this.st.el.attr('data-effect');
+            }
+         },
+         zoom: {
+            enabled: true,
+            duration: 500, // don't foget to change the duration also in CSS
+         },
+         mainClass: 'mfp-fade',
+      });
+      
 });

@@ -37,6 +37,8 @@
 @import 'annual-report';
 @import 'career';
 @import 'contact';
+@import 'projects-gallery';
+@import 'project-details';
 /*  */
 
 /* Top Bar
@@ -561,13 +563,6 @@ ul.navbar-nav>li.active>a {
 }
 
 
-.slider-img {
-   img {
-      max-width: 100%;
-      margin-top: 237px;
-   }
-}
-
 .hero-area.owl-carousel .active img {
    animation: fadeInRight 300ms both;
    animation-duration: 1.3s;
@@ -1032,24 +1027,8 @@ ul.navbar-nav>li.active>a {
          }
       }
    }
-
-   .owl-carousel.owl-theme .owl-nav [class*=owl-] {
-      background: none;
-      color: #9f9f9f;
-      font-size: 40px;
-      top: 50%;
-      right: -50px;
-
-      &:hover {
-         color: $primary-color;
-      }
-   }
-
-   .owl-carousel.owl-theme .owl-nav [class*=owl-prev] {
-      left: -50px;
-   }
 }
-
+ 
 .ts-features-content {
    p {
       position: relative;
@@ -1066,6 +1045,65 @@ ul.navbar-nav>li.active>a {
       }
    }
 
+}
+.ts-project-details,
+.ts-features {
+   .owl-carousel.owl-theme .owl-nav [class*=owl-] {
+      background: none;
+      color: #9f9f9f;
+      font-size: 40px;
+      top: 50%;
+      right: -50px;
+
+      &:hover {
+         color: $primary-color;
+      }
+   }
+
+   .owl-carousel.owl-theme .owl-nav [class*=owl-prev] {
+      left: -50px;
+   }
+}
+  
+/*==========================
+      Recent Projects area
+===========================*/
+.recent-project-wrapper {
+   margin-bottom: 40px;
+   .recent-project-img img {
+      width: 100%;
+   }
+}
+   .recent-project-info {
+      margin-top: 25px;
+      .ts-title {
+         margin-bottom: 0;
+      }
+      .project-title {
+         color: #ff5d34;
+         margin-bottom: 15px;
+      }
+      .ts-title a {
+         color: #252a37;
+         &:hover {
+            color: #ff5d34;
+         }
+      }
+   }
+   
+.projectthree {
+   .recent-project-info {
+      display: inline-block;
+      position: absolute;
+      background: #fff;
+      bottom: 0;
+      padding: 20px 40px;
+      opacity: 0;
+      transition: .5s;
+  }
+  .grid-item:hover .recent-project-info {
+   opacity: 1;
+}
 }
 
 /*==========================

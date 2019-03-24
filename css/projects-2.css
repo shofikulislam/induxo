@@ -1,0 +1,14 @@
+/* ---- .grid-item ---- */
+.ts-projects-gallery {
+  padding-bottom: 70px; }
+
+.grid-item img {
+  display: block;
+  max-width: 100%; }
+
+.ts-grid-item {
+  margin: 0 -15px;
+  background: transparent; }
+  .ts-grid-item .grid-item {
+    padding: 0 15px;
+    margin-bottom: 30px; }

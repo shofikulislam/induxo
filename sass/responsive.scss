@@ -98,6 +98,9 @@ tab rotate
     .history-area .carousel-indicators li.active:after {
         display: none;
     }
+    .requirement-list li {
+        width: 100%;
+    }
 }
 
 /*==========================
@@ -299,6 +302,9 @@ tab device
 
     .ts-features-content {
         text-align: left;
+    }
+    .requirement-list li {
+        width: 100%;
     }
 }
 

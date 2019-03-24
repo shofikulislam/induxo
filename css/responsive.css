@@ -44,7 +44,9 @@ tab rotate
     padding-left: 35px;
     padding-right: 0; }
   .history-area .carousel-indicators li.active:after {
-    display: none; } }
+    display: none; }
+  .requirement-list li {
+    width: 100%; } }
 
 /*==========================
 tab device 
@@ -161,7 +163,9 @@ tab device
   .ts-features-content p::after {
     left: 0; }
   .ts-features-content {
-    text-align: left; } }
+    text-align: left; }
+  .requirement-list li {
+    width: 100%; } }
 
 /*==========================
 small device /mobile sm and large
