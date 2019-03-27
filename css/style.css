@@ -1055,24 +1055,30 @@ span.blue-round:after {
   background-size: cover;
   background-position: center center;
   margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: #ff5c23; }
+  margin-bottom: 50px; }
 
 .ads-box-wrapper p, .widget p {
   color: #fff; }
 
-.ads-box-wrapper, .widget {
+.ads-box-wrapper {
   padding: 29px;
   position: relative;
   z-index: 1;
   overflow: hidden; }
-  .ads-box-wrapper img, .widget img {
+  .ads-box-wrapper img {
     position: absolute;
     width: 150px;
     height: 150px;
     right: -50px;
     bottom: 30px;
     z-index: -1; }
+
+.widget {
+  padding: 29px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: #ff5c23; }
 
 .widget svg {
   position: absolute;
@@ -1083,15 +1089,13 @@ span.blue-round:after {
   z-index: -1; }
 
 .column-title-large {
-  font-size: 48px; }
+  font-size: 48px;
+  margin-bottom: 50px; }
 
 /* career*/
 .ts-career .ads-box,
 .ts-career .sidebar {
   margin-top: 0; }
-
-.ts-career-wrapper .column-title-large {
-  margin-bottom: 50px; }
 
 .ts-career-wrapper p {
   margin-top: 35px;
@@ -1465,6 +1469,75 @@ select.form-control:not([size]):not([multiple]) {
 
 .challenge-wrapper, .result-wrapper {
   padding-right: 20px; }
+
+/*=============================
+ Service Details
+============================== */
+.service-menu li {
+  border-bottom: 1px solid #fff;
+  padding: 0 29px; }
+  .service-menu li:hover {
+    background: #ff5c23;
+    color: #fff; }
+
+.service-menu a {
+  display: block;
+  padding: 17px;
+  color: #252a37;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.widget.no-padding {
+  padding: 0; }
+
+.ts-service-details-wrapper .intro-video .intro-bg {
+  min-height: 280px; }
+
+.ts-service-details-wrapper .requirement-list li {
+  width: 100%; }
+
+.work-process-list {
+  position: relative;
+  z-index: 1;
+  margin-top: 30px; }
+  .work-process-list:after {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url(../images/service/service_details.png);
+    background-repeat: no-repeat;
+    z-index: -1; }
+  .work-process-list li {
+    position: relative;
+    margin-bottom: 25px; }
+
+.working-num {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  background: #ff5d34;
+  line-height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px; }
+
+.facilities li {
+  width: 100%; }
+
+.title-regular {
+  font-weight: 300; }
+
+.working-text {
+  position: absolute;
+  left: 60px;
+  top: 5px; }
 
 /*  */
 /* Top Bar
@@ -2369,14 +2442,18 @@ ul.navbar-nav > li.active > a {
   -o-transition: all ease-in-out .3s;
   transition: all ease-in-out .3s; }
 
-.team-area .team-social li {
+.team-area .team-social li, .team-area .team-social-classic li {
   list-style: none;
   display: inline-block; }
 
-.team-area .team-social li a {
+.team-area .team-social li a, .team-area .team-social-classic li a {
   margin-right: 15px;
   font-size: 24px;
   color: #fff; }
+
+.team-area .team-social-classic li a {
+  color: #101010;
+  font-size: 14px; }
 
 .team-area .team-name {
   font-size: 24px;

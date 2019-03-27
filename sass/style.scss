@@ -39,6 +39,7 @@
 @import 'contact';
 @import 'projects-gallery';
 @import 'project-details';
+@import 'service-details';
 /*  */
 
 /* Top Bar
@@ -1314,18 +1315,21 @@ ul.navbar-nav>li.active>a {
       transition: all ease-in-out .3s;
    }
 
-   .team-social li {
+   .team-social li, .team-social-classic li {
       list-style: none;
       display: inline-block;
    }
 
-   .team-social li a {
+   .team-social li a, .team-social-classic li a {
       margin-right: 15px;
       font-size: 24px;
       color: #fff;
    }
 
-
+   .team-social-classic li a {
+      color: #101010;
+      font-size: 14px;
+   }
 
    .team-name {
       font-size: 24px;
@@ -1355,7 +1359,6 @@ ul.navbar-nav>li.active>a {
       box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
    }
 }
-
 /*==========================
       footer area
 ===========================*/

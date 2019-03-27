@@ -1,0 +1,80 @@
+/*=============================
+ Service Details
+============================== */
+.service-menu {
+
+    li {
+        border-bottom: 1px solid #fff;
+        padding: 0 29px;
+
+        &:hover {
+            background: #ff5c23;
+            color: #fff;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 17px;
+        color: #252a37;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+}
+
+.widget.no-padding {
+    padding: 0;
+}
+.ts-service-details-wrapper .intro-video .intro-bg {
+    min-height: 280px;
+}
+
+.ts-service-details-wrapper .requirement-list li {
+    width: 100%;
+}
+
+.work-process-list {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    &:after {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-image: url(../images/service/service_details.png);
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    li {
+        position: relative;
+        margin-bottom: 25px;
+    }
+}
+.working-num {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    background: #ff5d34;
+    line-height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+}
+.facilities li {
+    width: 100%;
+}
+.title-regular {
+    font-weight: 300;
+}
+.working-text {
+    position: absolute;
+    left: 60px;
+    top: 5px;
+}
