@@ -121,18 +121,26 @@ select.form-control:not([size]):not([multiple]) {
   background: #f7f9fb;
 }
 
-.widget-title {
+.widget-title, 
+.branches-title {
   font-size: 24px;
 }
 
-.ts-widget-area .column-title {
+.ts-widget-area 
+.column-title {
   margin-bottom: 50px;
 }
 
-.ts-widget-contact-info p {
+.ts-widget-contact-info p, 
+.ts-branch-contact-info p {
   margin-bottom: 0;
 }
-
+.ts-branch-content-wrapper {
+  margin-top: 30px;
+}
+.branches-img img {
+  width: 100%;
+}
 .ts-widget-item {
   margin-bottom: 60px;
 }
@@ -141,4 +149,38 @@ select.form-control:not([size]):not([multiple]) {
   padding: 60px 35px;
   padding-top: 60px;
   padding-bottom: 48px;
+}
+.qutoe-form-inner {
+  padding: 100px;
+}
+.ts-quote-area .column-title {
+  margin-bottom: 50px;
+}
+.ts-quote-area .ts-maps-wraper .map {
+  height: 681px;
+}
+.quote_form {
+  input::input-placeholder,
+  textarea::input-placeholder {
+     color: #666666;
+     color: rgba(255, 255, 255, 0.3);
+  }
+}
+.qutoe-form-inner {
+  .form-control {
+     border: 0;
+     border-bottom: 1px solid #d3d3d3;
+     padding-left: 0;
+     color: #000;
+     background: #edf5f8;
+     border-radius: 0;
+     &:focus {
+        border: 0;
+        border-bottom: 1px solid #ff5c23;
+        background: none;
+        border-radius: 0;
+        box-shadow: none;
+     }
+  }
+  
 }

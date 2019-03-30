@@ -63,9 +63,9 @@
     background: #ff5d34;
     line-height: 40px;
     border-radius: 50%;
-    display: inline-block;
     text-align: center;
-    margin-right: 20px;
+    position: absolute;
+    left: 0;
 }
 .facilities li {
     width: 100%;
@@ -74,7 +74,7 @@
     font-weight: 300;
 }
 .working-text {
-    position: absolute;
     left: 60px;
     top: 5px;
+    padding-left: 60px;
 }

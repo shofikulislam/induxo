@@ -836,29 +836,27 @@ ul.navbar-nav>li.active>a {
 /*==========================
       service area
 ===========================*/
-.service-area {
+.ts-service-area {
    padding-bottom: 40px;
 
-   .single-service {
-      text-align: left;
-
-      img {
+   .ts-service-wrapper {
+      .ts-service-img {
          width: 100%;
       }
-   }
 
-   .service-box-info {
-      padding-left: 80px;
+      .service-box-info {
+         padding-left: 80px;
 
-      .ts-title {
-         a {
-            color: #252a37;
+         .ts-title {
+            a {
+               color: #252a37;
 
-            &:hover {
-               color: #ff5c23;
+               &:hover {
+                  color: #ff5c23;
+               }
             }
-         }
 
+         }
       }
    }
 
@@ -1029,7 +1027,7 @@ ul.navbar-nav>li.active>a {
       }
    }
 }
- 
+
 .ts-features-content {
    p {
       position: relative;
@@ -1047,6 +1045,7 @@ ul.navbar-nav>li.active>a {
    }
 
 }
+
 .ts-project-details,
 .ts-features {
    .owl-carousel.owl-theme .owl-nav [class*=owl-] {
@@ -1065,33 +1064,39 @@ ul.navbar-nav>li.active>a {
       left: -50px;
    }
 }
-  
+
 /*==========================
       Recent Projects area
 ===========================*/
 .recent-project-wrapper {
    margin-bottom: 40px;
+
    .recent-project-img img {
       width: 100%;
    }
 }
-   .recent-project-info {
-      margin-top: 25px;
-      .ts-title {
-         margin-bottom: 0;
-      }
-      .project-title {
+
+.recent-project-info {
+   margin-top: 25px;
+
+   .ts-title {
+      margin-bottom: 0;
+   }
+
+   .project-title {
+      color: #ff5d34;
+      margin-bottom: 15px;
+   }
+
+   .ts-title a {
+      color: #252a37;
+
+      &:hover {
          color: #ff5d34;
-         margin-bottom: 15px;
-      }
-      .ts-title a {
-         color: #252a37;
-         &:hover {
-            color: #ff5d34;
-         }
       }
    }
-   
+}
+
 .projectthree {
    .recent-project-info {
       display: inline-block;
@@ -1101,10 +1106,11 @@ ul.navbar-nav>li.active>a {
       padding: 20px 40px;
       opacity: 0;
       transition: .5s;
-  }
-  .grid-item:hover .recent-project-info {
-   opacity: 1;
-}
+   }
+
+   .grid-item:hover .recent-project-info {
+      opacity: 1;
+   }
 }
 
 /*==========================
@@ -1268,6 +1274,70 @@ ul.navbar-nav>li.active>a {
    }
 
 }
+/* ts partner list */
+
+
+.ts-partner-list {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   li {
+      min-height: 125px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      display: flex;
+      &:before {
+         position: absolute;
+         content: "";
+         bottom: 0;
+         left: 0;
+         height: 1px;
+         width: 100%;
+     }
+     
+     &:after {
+         position: absolute;
+         content: "";
+         top: 0;
+         right: 0;
+         height: 100%;
+         width: 1px;
+     }
+     
+      &:nth-child(1):before, 
+      &:nth-child(2):before, 
+      &:nth-child(3):before, 
+      &:nth-child(4):before, 
+      &:nth-child(5):before    {
+         background: #e6e6e6;
+      }
+      &:nth-child(1):after, 
+      &:nth-child(2):after, 
+      &:nth-child(3):after,
+      &:nth-child(4):after,  
+      &:nth-child(6):after,
+      &:nth-child(7):after,
+      &:nth-child(8):after,
+      &:nth-child(9):after {
+         background: #e6e6e6;
+      }
+      
+      
+   }
+   
+}
+.happy-client{
+   li{
+      &:nth-child(1):before, 
+      &:nth-child(2):before, 
+      &:nth-child(3):before,
+      &:nth-child(4):before,  
+      &:nth-child(5):before {
+         background: none;
+      }
+   }
+}
+
 
 /*==========================
       team area
@@ -1315,12 +1385,14 @@ ul.navbar-nav>li.active>a {
       transition: all ease-in-out .3s;
    }
 
-   .team-social li, .team-social-classic li {
+   .team-social li,
+   .team-social-classic li {
       list-style: none;
       display: inline-block;
    }
 
-   .team-social li a, .team-social-classic li a {
+   .team-social li a,
+   .team-social-classic li a {
       margin-right: 15px;
       font-size: 24px;
       color: #fff;
@@ -1359,6 +1431,16 @@ ul.navbar-nav>li.active>a {
       box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
    }
 }
+/*==========================
+      faq area
+===========================*/
+.ts-faq-wrapper .column-title {
+   margin-bottom: 70px;
+}
+.sidebar.sidebar-right {
+   margin-top: 0;
+}
+
 /*==========================
       footer area
 ===========================*/
