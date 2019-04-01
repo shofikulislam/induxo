@@ -31,7 +31,6 @@
 @import 'variable';
 @import 'mixin';
 @import 'owlcarousel';
-@import 'timeline';
 @import 'map';
 @import 'chart';
 @import 'annual-report';
@@ -603,7 +602,7 @@ ul.navbar-nav>li.active>a {
    ts funfact 
  ==================================*/
 .ts-funfact {
-   margin-top: -70px;
+   margin-top: -60px;
    z-index: 2;
    position: relative;
 
@@ -723,7 +722,7 @@ ul.navbar-nav>li.active>a {
          padding: 0;
       }
    }
-
+   
    .carousel-indicators {
       position: relative;
       top: 30px;

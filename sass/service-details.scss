@@ -42,11 +42,10 @@
         position: absolute;
         left: 20px;
         top: 0;
-        width: 100%;
-        height: 100%;
+        width: 1px;
+        height: 95%;
         content: '';
-        background-image: url(../images/service/service_details.png);
-        background-repeat: no-repeat;
+        border: 1px dashed #ffae99;
         z-index: -1;
     }
     li {
