@@ -932,7 +932,8 @@ h5.mb-0 .card-button .collapsed:before {
   font-weight: 700;
   color: #101010;
   font-size: 18px;
-  padding-right: 50px; }
+  padding-right: 50px;
+  cursor: pointer; }
 
 h5.mb-0 .card-button p:hover {
   color: #ff5c23; }
