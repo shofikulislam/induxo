@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #010101;
+  color: #101010;
   font-family: "Zilla Slab", serif; }
 
 h1,
@@ -82,6 +82,9 @@ ul {
   padding: 0;
   margin: 0; }
 
+iframe {
+  border: none; }
+
 a:link,
 a:visited {
   text-decoration: none; }
@@ -123,12 +126,19 @@ section,
 .p-60 {
   padding: 60px 0; }
 
+.p-100 {
+  padding: 100px 0 !important; }
+
 .media > .pull-left {
   margin-right: 20px; }
 
 .gap-60 {
   clear: both;
   height: 60px; }
+
+.gap-50 {
+  clear: both;
+  height: 50px; }
 
 .gap-40 {
   clear: both;
@@ -148,6 +158,9 @@ section,
 .mb-30 {
   margin-bottom: 30px; }
 
+.mb-50 {
+  margin-bottom: 50px; }
+
 .mb-60 {
   margin-bottom: 60px; }
 
@@ -163,8 +176,8 @@ section,
 .mb-110 {
   margin-bottom: 110px; }
 
-.mt-60 {
-  margin-top: 60px; }
+.mt-100 {
+  margin-top: 100px; }
 
 .mrb-30 {
   margin-bottom: 30px; }
@@ -195,6 +208,12 @@ section,
 
 .mrt-0 {
   margin-top: 0 !important; }
+
+.pab-60 {
+  padding-bottom: 60px; }
+
+.pab-70 {
+  padding-bottom: 70px; }
 
 .pab {
   padding-bottom: 0; }
@@ -280,39 +299,59 @@ img.pull-right {
   .btn-link:hover {
     color: #ff5c23; }
 
+.btn-white {
+  background: #fff;
+  color: #2c2c2c;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
 .title-bg-small {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   color: #fff;
   background: #101010;
   display: inline-block;
   padding: 3px 18px;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif; }
+  text-transform: uppercase; }
 
 .section-title,
 .column-title {
   font-size: 36px;
   font-weight: 300;
   color: #101010;
-  margin-bottom: 80px; }
+  margin-bottom: 85px; }
   .section-title span,
   .column-title span {
     font-weight: 700; }
+
+.title-small {
+  font-size: 30px;
+  font-weight: 700; }
 
 .column-title {
   margin-bottom: 30px; }
 
 .ts-title {
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: 600; }
 
-.overlay:before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  content: '';
-  background: rgba(0, 0, 0, 0.5); }
+.title-white {
+  color: #fff; }
+
+.overlay {
+  position: relative;
+  z-index: 1; }
+  .overlay:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba(0, 0, 0, 0.68);
+    z-index: -1; }
+
+.overlay-two::before {
+  background: rgba(1, 14, 42, 0.6); }

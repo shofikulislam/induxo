@@ -136,7 +136,7 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 0;
 }
 .ts-branch-content-wrapper {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .branches-img img {
   width: 100%;
@@ -181,6 +181,10 @@ select.form-control:not([size]):not([multiple]) {
         border-radius: 0;
         box-shadow: none;
      }
+     
   }
+  .form-group .btn {
+    margin-top: 15px;
+}
   
 }

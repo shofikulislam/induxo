@@ -26,18 +26,20 @@
 .widget.no-padding {
     padding: 0;
 }
-.ts-service-details-wrapper .intro-video .intro-bg {
-    min-height: 280px;
+.ts-service-details-wrapper {
+    .intro-video .intro-bg {
+        min-height: 280px;
+    }
+    .requirement-list li {
+        width: 100%;
+    }
 }
 
-.ts-service-details-wrapper .requirement-list li {
-    width: 100%;
-}
 
 .work-process-list {
     position: relative;
     z-index: 1;
-    margin-top: 30px;
+    margin-top: 40px;
     &:after {
         position: absolute;
         left: 20px;
@@ -50,7 +52,7 @@
     }
     li {
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 }
 .working-num {

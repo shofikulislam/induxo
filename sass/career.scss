@@ -114,7 +114,7 @@ h5.mb-0 {
   margin-left: 0;
 }
 
-h5.mb-0 button {
+h5.mb-0 .card-button {
   position: relative;
   width: 100%;
   background: none;
@@ -128,11 +128,11 @@ h5.mb-0 button {
 
 
 
-h5.mb-0 button.collapsed {
+h5.mb-0 .card-button.collapsed {
   color: #333;
 }
 
-h5.mb-0 button:before {
+h5.mb-0 .card-button:before {
   color: #fff;
   width: 40px;
   height: 40px;
@@ -140,8 +140,8 @@ h5.mb-0 button:before {
   border-radius: 3px;
 }
 
-h5.mb-0 button:before,
-h5.mb-0 button .collapsed:before {
+h5.mb-0 .card-button:before,
+h5.mb-0 .card-button .collapsed:before {
   font-family: "FontAwesome";
   position: absolute;
   z-index: 0;
@@ -155,22 +155,23 @@ h5.mb-0 button .collapsed:before {
   color: #101010;
 }
 
-.card-header button p {
+.card-header .card-button p {
   margin-bottom: 0px;
   font-weight: 700;
   color: #101010;
   font-size: 18px;
+  padding-right: 50px;
 }
 
-h5.mb-0 button p:hover {
+h5.mb-0 .card-button p:hover {
   color: #ff5c23;
 }
 
-h5.mb-0 button:before {
+h5.mb-0 .card-button:before {
   content: "\f068";
 }
 
-h5.mb-0 button.collapsed:before {
+h5.mb-0 .card-button.collapsed:before {
   content: "\f067";
 }
 
@@ -189,6 +190,7 @@ h5.mb-0 button.collapsed:before {
 .ts-jobs-wrapper {
   padding: 50px;
   padding-bottom: 0;
+  padding-top: 0;
 }
 
 .ts-jobs-image {

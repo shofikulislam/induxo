@@ -92,7 +92,7 @@
    display: inline-block;
 
    li {
-      margin-right: 50px;
+      margin-right: 49px;
    }
 
    i {
@@ -575,6 +575,7 @@ ul.navbar-nav>li.active>a {
    .banner-title {
       font-size: 64px;
       color: #fff;
+      line-height: 70px;
    }
 }
 
@@ -641,7 +642,9 @@ ul.navbar-nav>li.active>a {
 .about-area {
    @include background-content();
 
-
+   .ts-about-wrapper {
+      margin-top: 30px;
+   }
    .about-content {
       margin-bottom: 45px;
    }
@@ -714,6 +717,9 @@ ul.navbar-nav>li.active>a {
       padding: 47px;
       padding-left: 14px;
    }
+   .carousel-inner {
+      margin-bottom: 45px;
+  }
 
    .carousel-item {
       background: #fff;
@@ -725,7 +731,6 @@ ul.navbar-nav>li.active>a {
    
    .carousel-indicators {
       position: relative;
-      top: 30px;
       left: 0%;
       z-index: 5;
       width: 100%;
@@ -815,7 +820,7 @@ ul.navbar-nav>li.active>a {
 ===========================*/
 .cta-area {
    @include background-content();
-   padding: 44px 0;
+   padding: 50px 0;
 
    .title-bg-none {
       background: none;
@@ -839,7 +844,7 @@ ul.navbar-nav>li.active>a {
    padding-bottom: 40px;
 
    .ts-service-wrapper {
-      .ts-service-img {
+      .ts-service-img img {
          width: 100%;
       }
 
@@ -876,7 +881,7 @@ ul.navbar-nav>li.active>a {
 
    .intro-right-content {
       max-width: 560px;
-      padding: 95px 85px 65px 50px;
+      padding: 95px 0px 65px 55px;
       overflow: hidden;
       height: 100%;
 
@@ -967,6 +972,7 @@ ul.navbar-nav>li.active>a {
          @include background-content();
          position: relative;
          z-index: 1;
+         min-height: 450px;
 
          &:after {
             position: absolute;
@@ -983,6 +989,9 @@ ul.navbar-nav>li.active>a {
          &:hover {
             .project-info {
                opacity: 1;
+            }
+            .project-content {
+               opacity: 0;
             }
 
          }
@@ -1008,8 +1017,8 @@ ul.navbar-nav>li.active>a {
          }
 
          .project-info {
-            background: #ff5c23;
-            padding: 60px 30px;
+            background: rgba(255, 92, 35, 0.85);
+            padding: 64px 30px;
             overflow: hidden;
             opacity: 0;
             z-index: 999;
@@ -1068,7 +1077,7 @@ ul.navbar-nav>li.active>a {
       Recent Projects area
 ===========================*/
 .recent-project-wrapper {
-   margin-bottom: 40px;
+   margin-bottom: 35px;
 
    .recent-project-img img {
       width: 100%;
@@ -1076,7 +1085,7 @@ ul.navbar-nav>li.active>a {
 }
 
 .recent-project-info {
-   margin-top: 25px;
+   margin-top: 20px;
 
    .ts-title {
       margin-bottom: 0;
@@ -1084,7 +1093,7 @@ ul.navbar-nav>li.active>a {
 
    .project-title {
       color: #ff5d34;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
    }
 
    .ts-title a {
@@ -1117,10 +1126,6 @@ ul.navbar-nav>li.active>a {
 ===========================*/
 .testiomonial-area {
    @include background-content();
-   height: 540px;
-
-
-
    .section-title {
       color: $white-color;
 
@@ -1180,7 +1185,7 @@ ul.navbar-nav>li.active>a {
       color: #9f9f9f;
       font-size: 40px;
       top: 15%;
-      right: -50px;
+      right: -28%;
 
       &:hover {
          color: $primary-color;
@@ -1188,7 +1193,7 @@ ul.navbar-nav>li.active>a {
    }
 
    .owl-carousel.owl-theme .owl-nav [class*=owl-prev] {
-      left: -50px;
+      left: -28%;
    }
 }
 
@@ -1206,7 +1211,7 @@ ul.navbar-nav>li.active>a {
       .post-meta {
          display: inline-block;
          color: #ff5c23;
-         margin-bottom: 30px;
+         margin-bottom: 20px;
 
          i {
             margin-right: 8px;
@@ -1214,7 +1219,7 @@ ul.navbar-nav>li.active>a {
       }
 
       .post-date {
-         margin-left: 15px;
+         margin-left: 35px;
          color: #6c6b6f;
 
       }
@@ -1234,12 +1239,16 @@ ul.navbar-nav>li.active>a {
 
    .blog-box {
       border: 1px solid #d2d2d2;
+      
 
       &:hover {
          background-color: #edf5f8;
+         .btn-link i {
+            opacity: 1;
+        }
       }
+      
    }
-
    .two {
       border-left-color: #fff;
       border-right-color: #fff;
@@ -1249,6 +1258,12 @@ ul.navbar-nav>li.active>a {
          border-right-color: #edf5f8;
       }
    }
+
+   .btn-link i {
+      font-size: 17px;
+      opacity: 0;
+  }
+   
 }
 
 /*==========================
@@ -1369,7 +1384,7 @@ ul.navbar-nav>li.active>a {
    .ts-team-info {
       border: 1px solid #d8d8d8;
       border-top: none;
-      padding: 30px 0;
+      padding: 20px 0;
    }
 
    .team-social {
@@ -1383,7 +1398,9 @@ ul.navbar-nav>li.active>a {
       -o-transition: all ease-in-out .3s;
       transition: all ease-in-out .3s;
    }
-
+   .team-social-classic {
+      margin-top: 10px;
+  }
    .team-social li,
    .team-social-classic li {
       list-style: none;
@@ -1473,7 +1490,7 @@ ul.navbar-nav>li.active>a {
    .widget-title {
       font-weight: 500;
       margin-top: 15px;
-      margin-bottom: 40px;
+      margin-bottom: 35px;
    }
 
    .list-arrow {

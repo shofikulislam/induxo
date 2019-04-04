@@ -76,6 +76,19 @@ jQuery(function ($) {
       mouseDrag: false,
       smartSpeed: 1100,
       navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
+      responsive: {
+         0: {
+            items: 1,
+            nav: false,
+         },
+         600: {
+            items: 1,
+            nav: false,
+         },
+         1000: {
+            nav: true,
+         }
+      }
 
    });
    /* ---------------------------------------------
@@ -93,6 +106,19 @@ jQuery(function ($) {
       mouseDrag: false,
       smartSpeed: 1100,
       navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+      responsive: {
+         0: {
+            items: 1,
+            nav: false,
+         },
+         600: {
+            items: 1,
+            nav: false,
+         },
+         1000: {
+            nav: true,
+         }
+      }
 
    });
    /* ---------------------------------------------
@@ -165,7 +191,7 @@ jQuery(function ($) {
             nav: false,
          },
          600: {
-            items: 2,
+            items: 3,
             nav: false,
          },
          1000: {

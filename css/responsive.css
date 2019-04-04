@@ -2,62 +2,100 @@
 tab rotate 
 ===========================*/
 @media (min-width: 992px) and (max-width: 1200px) {
+  /* header social links */
   .social-links li {
     margin-right: 15px; }
+  /* header nav */
   .header ul.navbar-nav > li {
     margin-left: 20px; }
     .header ul.navbar-nav > li a {
-      margin-left: 0; }
+      margin-left: 0;
+      font-size: 13px; }
   .header.header-transparent ul.navbar-nav {
     margin-right: 55px; }
-  .header ul.navbar-nav > li > a {
-    font-size: 13px; }
+  /* slider item */
   .slider-item .slider-content {
     padding: 300px 0 182px; }
-  .slider-item .slider-content .slider-title {
-    font-size: 45px; }
+    .slider-item .slider-content .slider-title {
+      font-size: 45px; }
+  /* nav search */
   .nav-search {
-    right: 15%; }
+    right: 14%; }
+    .nav-search i {
+      font-size: 15px; }
   .search-block {
     right: 14%; }
-  .search-block .search-close {
-    font-size: 25px; }
-  .nav-search i {
-    font-size: 15px; }
-  .nav-search {
-    right: 14%; }
+    .search-block .search-close {
+      font-size: 25px; }
+  /* btn */
   .btn {
     padding: 0px 15px;
     font-size: 13px; }
+  /* ts funfact */
   .ts-single-funfact .funfact-title {
     font-size: 14px; }
   .ts-single-funfact {
     padding: 0 30px; }
+  /* about area */
+  .about-area .column-title {
+    font-size: 31px; }
+  /* ts facts area */
+  .ts-facts-area .column-title {
+    font-size: 35px; }
   .ts-facts-area .intro-right-content {
-    padding: 95px 50px 64px 50px;
+    padding: 95px 90px 64px 50px;
     display: inline-block; }
   .ts-facts-area .intro-right-content .intro-icon span {
     font-size: 15px; }
+  /* ts features */
+  .ts-features .column-title,
+  .team-area .column-title,
+  .ts-work-process .column-title {
+    font-size: 33px; }
+  .ts-features .ts-features-content p::after,
+  .team-area .ts-features-content p::after,
+  .ts-work-process .ts-features-content p::after {
+    left: 50px; }
+  /* ts blog */
   .ts-blog .single-blog h3 {
     font-size: 18px; }
+  /* history area*/
   .history-area .history-content {
     padding-left: 35px;
     padding-right: 0; }
   .history-area .carousel-indicators li.active:after {
     display: none; }
   .requirement-list li {
-    width: 100%; } }
+    width: 100%; }
+  /* ts annual report*/
+  .ts-annual-report .ts-archive {
+    margin-top: 110px; }
+  /* ts quote area*/
+  .ts-quote-area .column-title {
+    font-size: 33px; } }
 
 /*==========================
 tab device 
 ===========================*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .top-info li {
-    margin-bottom: 5px; }
   .topbar-transparent {
     padding: 8px 0; }
+    .topbar-transparent .top-info li {
+      margin-bottom: 5px; }
+    .topbar-transparent li i {
+      font-size: 12px; }
+    .topbar-transparent .social-links li {
+      margin-right: 5px; }
   .header .navbar {
-    padding: 70px 0; }
+    padding: 70px 0;
+    border-bottom: unset; }
+  /* navbar toggler*/
+  .navbar-light .navbar-toggler {
+    border-color: #fa6742;
+    background-color: #fa6742;
+    color: #fff; }
+    .navbar-light .navbar-toggler:hover {
+      cursor: pointer; }
   .navbar-light .navbar-toggler-icon {
     background-image: none;
     color: #fff;
@@ -67,12 +105,6 @@ tab device
     font-size: 20px;
     line-height: 20px;
     margin: 12px 0; }
-  .navbar-light .navbar-toggler {
-    border-color: #fa6742;
-    background-color: #fa6742;
-    color: #fff; }
-  .navbar-light .navbar-toggler:hover {
-    cursor: pointer; }
   .nav-search {
     display: none; }
   .header-transparent .navbar-nav {
@@ -82,8 +114,6 @@ tab device
     line-height: 40px !important; }
   .header .navbar .header-quote {
     display: none; }
-  .header .navbar {
-    border-bottom: unset; }
   .header.header-transparent ul.navbar-nav {
     width: 100%;
     margin-top: 20px; }
@@ -112,43 +142,53 @@ tab device
     background: #222; }
   .collapse.show .navbar-nav li .dropdown-menu li a {
     color: #fff; }
-  .slider-item .slider-content {
-    padding: 240px 0 100px; }
-  .about-area .btn-area {
-    margin-bottom: 50px; }
-  .cta-area h3 {
-    font-size: 30px; }
   .header.sticky .navbar {
     padding: 20px 0; }
+  .header.header-classic ul.navbar-nav > li > a {
+    color: #fff; }
+  /* slide item */
+  .slider-item .slider-content {
+    padding: 300px 0 100px; }
+  .slider-item .slider-left-img {
+    display: none; }
+  /*about area */
+  .about-area .btn-area {
+    margin-bottom: 50px; }
+  /* cta area */
+  .cta-area .column-title {
+    font-size: 35px; }
+  /* contact */
   .contact {
     margin-bottom: 30px; }
+  /* ts facts area */
   .ts-facts-area .intro-right-content {
     margin-left: 100px; }
+  /* history area */
   .history-area .carousel-item-next,
   .history-area .carousel-item-prev,
   .history-area .carousel-item.active {
     display: inline-block; }
-  .history-area .carousel-indicators li.active:after {
-    display: none; }
-  .history-area .history-content {
-    padding-left: 47px; }
-  .history-area .history-content {
-    max-height: none; }
-  .history-img img {
-    width: 100%; }
   .history-area .carousel-indicators li {
     margin-left: 0;
     margin-right: 0; }
+  .history-area .carousel-indicators li.active:after {
+    display: none; }
+  .history-area .history-content {
+    padding-left: 47px;
+    max-height: none; }
+  .history-area .history-img img {
+    width: 100%; }
+  /* team */
   .ts-team-wrapper {
     text-align: center; }
-  .header.header-classic ul.navbar-nav > li > a {
-    color: #fff; }
   .team-area .team-name {
     font-size: 20px; }
+  /* ts annual report */
   .ts-annual-report .annual-report-tabs-item .column-title {
     font-size: 35px; }
-  .ts-annual-report .column-title {
-    font-size: 23px; }
+  .ts-annual-report .ts-archive {
+    margin-top: 110px; }
+  /* sidebar */
   .ads-box .btn,
   .sidebar .btn {
     padding: 0 22px; }
@@ -158,32 +198,49 @@ tab device
   .ads-box-wrapper .column-title,
   .sidebar .column-title {
     font-size: 25px; }
-  .ts-features-content p {
-    padding-left: 20px; }
-  .ts-features-content p::after {
-    left: 0; }
+  /* ts features */
   .ts-features-content {
     text-align: left; }
+    .ts-features-content p {
+      padding-left: 20px; }
+      .ts-features-content p::after {
+        left: 0; }
   .requirement-list li {
-    width: 100%; } }
+    width: 100%; }
+  .column-title-large {
+    line-height: 70px;
+    font-size: 40px; }
+  .service-details-text,
+  .project-details-text {
+    margin-top: 30px; }
+  .ts-branches-wrapper {
+    margin-bottom: 70px; }
+  .ts-jobs-wrapper {
+    padding: 0; } }
 
 /*==========================
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
-  .top-info li {
-    margin-bottom: 8px; }
+  /* topbar transparent */
   .topbar-transparent {
     text-align: center; }
+    .topbar-transparent .top-info li {
+      margin-bottom: 8px; }
+    .topbar-transparent .social-links {
+      text-align: center;
+      margin-top: 5px; }
   .header.sticky .navbar {
     padding: 20px 0; }
-  .about-area .btn-area {
-    margin-bottom: 50px; }
-  .social-links {
-    text-align: center;
-    margin-top: 5px; }
   .header .navbar {
-    padding: 110px 0; }
+    padding: 120px 0;
+    border-bottom: unset; }
+  .navbar-light .navbar-toggler {
+    border-color: #fa6742;
+    background-color: #fa6742;
+    color: #fff; }
+    .navbar-light .navbar-toggler:hover {
+      cursor: pointer; }
   .navbar-light .navbar-toggler-icon {
     background-image: none;
     color: #fff;
@@ -193,12 +250,6 @@ small device /mobile sm and large
     font-size: 20px;
     line-height: 20px;
     margin: 12px 0; }
-  .navbar-light .navbar-toggler {
-    border-color: #fa6742;
-    background-color: #fa6742;
-    color: #fff; }
-  .navbar-light .navbar-toggler:hover {
-    cursor: pointer; }
   .nav-search {
     display: none; }
   .header-transparent .navbar-nav {
@@ -208,8 +259,6 @@ small device /mobile sm and large
     line-height: 40px !important; }
   .header .navbar .header-quote {
     display: none; }
-  .header .navbar {
-    border-bottom: unset; }
   .header.header-transparent ul.navbar-nav {
     width: 100%;
     margin-top: 20px; }
@@ -247,24 +296,32 @@ small device /mobile sm and large
     display: none; }
   .nav-search {
     display: none; }
-  .banner-area .banner-title {
+  .slider-item .slider-content .slider-title {
     font-size: 40px; }
+  .slider-item .slider-left-img {
+    display: none; }
+  .about-area .btn-area {
+    margin-bottom: 50px; }
   .cta-area {
-    padding: 20px 0; }
-  .cta-area .column-title {
-    font-size: 35px; }
-  .cta-area .btn-area {
     text-align: center; }
+    .cta-area .column-title {
+      font-size: 40px; }
+    .cta-area .btn-area {
+      margin-top: 25px;
+      text-align: center; }
+  /* ts features */
   .ts-features .section-title {
     font-size: 30px; }
-  .ts-features .ts-features-content p {
-    padding-left: 30px;
-    margin-top: 50px; }
-  .ts-features .ts-features-content p::after {
-    left: 0; }
+  .ts-features .ts-features-content {
+    text-align: left; }
+    .ts-features .ts-features-content p {
+      padding-left: 20px; }
+      .ts-features .ts-features-content p::after {
+        left: 0; }
+  .ts-service-area .ts-service-wrapper .service-box-info {
+    padding-right: 165px; }
+  /* ts location */
   .location-wrapper .map-image {
-    display: none; }
-  .location_indicator {
     display: none; }
   .location-wrapper .location {
     display: block;
@@ -273,29 +330,40 @@ small device /mobile sm and large
     float: left;
     width: 50%;
     display: inline-block; }
+  .location_indicator {
+    display: none; }
   .ts-footer .footer-social li a i {
     width: 28px;
     height: 28px;
     line-height: 28px; }
+  /* ts annual report */
   .ts-annual-report .annual-report-tabs-item .column-title {
-    font-size: 35px;
-    line-height: 50px; }
-  .ts-annual-report .column-title {
-    font-size: 23px; }
-  .history-area .carousel-item-next,
+    font-size: 35px; }
+  .ts-annual-report .ts-archive {
+    margin-top: 110px; }
+  /* history area */
   .history-area .carousel-item-prev,
+  .history-area .carousel-item-next,
   .history-area .carousel-item.active {
     display: inline-block; }
-  .history-area .carousel-indicators li.active:after {
-    display: none; }
   .history-area .carousel-indicators li {
     margin-left: 0;
     margin-right: 0; }
-  .ts-features-content p {
-    padding-left: 20px; }
-  .ts-features-content p::after {
-    left: 0; }
-  .ts-features-content {
-    text-align: left; }
+  .history-area .carousel-indicators li.active:after {
+    display: none; }
   .requirement-list li {
-    width: 100%; } }
+    width: 100%; }
+  .ts-partner-list {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr); }
+    .ts-partner-list li:before, .ts-partner-list li:after {
+      display: none; }
+  .ts-jobs-wrapper {
+    margin-bottom: 50px; }
+  .service-details-text,
+  .project-details-text {
+    margin-top: 30px; }
+  .ts-branches-wrapper {
+    margin-bottom: 70px; }
+  .ts-footer .week-schedule li {
+    width: 70%; } }
