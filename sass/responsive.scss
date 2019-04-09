@@ -18,12 +18,6 @@ tab rotate
         }
     }
 
-    .header.header-transparent ul.navbar-nav {
-        margin-right: 55px;
-    }
-
-
-
      /* slider item */
     .slider-item {
         .slider-content {
@@ -127,18 +121,20 @@ tab rotate
         width: 100%;
     }
 
-    /* ts annual report*/
-    .ts-annual-report {
-        .ts-archive {
-            margin-top: 110px;
-        }
-    }
+   
     /* ts quote area*/
     .ts-quote-area {
         .column-title {
             font-size: 33px;
         }
     }
+    
+        .cta-centred{
+            .column-title {
+                font-size: 38px;
+            }
+        }
+    
 }
 
 /*==========================
@@ -156,7 +152,7 @@ tab device
             font-size: 12px;
         }
         .social-links li {
-            margin-right: 5px;
+            margin-right: 4px;
         }
     }
     
@@ -253,7 +249,9 @@ tab device
     .header.header-classic ul.navbar-nav>li>a {
         color: #fff;
     }
-
+    .header-transparent.header-standard ul.navbar-nav > li > a{
+        color: #fff;
+    }
     /* slide item */
     .slider-item {
         .slider-content {
@@ -323,9 +321,6 @@ tab device
                 font-size: 35px;
             }
         }
-        .ts-archive {
-            margin-top: 110px;
-        }
 
     }
 
@@ -375,6 +370,22 @@ tab device
     }
     .ts-jobs-wrapper {
         padding: 0;
+    }
+    .about-gallery .gallery-3 {
+        margin-top: 30px;
+    }
+    
+    .ts-service-wrapper.side-border {
+        border: none;
+    }
+    
+    .ts-service-wrapper.bottom-border {
+        border: none;
+    }
+    
+    .ts-blog .two {
+        border-left-color: #d2d2d2;
+        border-right-color: #d2d2d2;
     }
     
 }
@@ -496,7 +507,9 @@ small device /mobile sm and large
     .header.header-classic ul.navbar-nav>li>a {
         color: #fff;
     }
-
+    .header-transparent.header-standard ul.navbar-nav > li > a{
+        color: #fff;
+    }
     .quote-btn.btn {
         display: none;
     }
@@ -582,9 +595,6 @@ small device /mobile sm and large
                 font-size: 35px;
             }
         }
-        .ts-archive {
-            margin-top: 110px;
-        }
 
     }
 
@@ -625,5 +635,24 @@ small device /mobile sm and large
     }
     .ts-footer .week-schedule li{
         width: 70%;
+    }
+    .about-gallery .gallery-3 {
+        margin-top: 30px;
+    }
+    
+    .ts-service-wrapper.side-border {
+        border: none;
+    }
+    
+    .ts-service-wrapper.bottom-border {
+        border: none;
+    }
+    
+    .ts-blog .two {
+        border-left-color: #d2d2d2;
+        border-right-color: #d2d2d2;
+    }
+    .ts-service-strategic .ts-service-wrapper .service-box-info {
+        padding-right: 0;
     }
 }

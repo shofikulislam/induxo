@@ -11,8 +11,6 @@ tab rotate
     .header ul.navbar-nav > li a {
       margin-left: 0;
       font-size: 13px; }
-  .header.header-transparent ul.navbar-nav {
-    margin-right: 55px; }
   /* slider item */
   .slider-item .slider-content {
     padding: 310px 0 182px; }
@@ -67,12 +65,11 @@ tab rotate
     display: none; }
   .requirement-list li {
     width: 100%; }
-  /* ts annual report*/
-  .ts-annual-report .ts-archive {
-    margin-top: 110px; }
   /* ts quote area*/
   .ts-quote-area .column-title {
-    font-size: 33px; } }
+    font-size: 33px; }
+  .cta-centred .column-title {
+    font-size: 38px; } }
 
 /*==========================
 tab device 
@@ -85,7 +82,7 @@ tab device
     .topbar-transparent li i {
       font-size: 12px; }
     .topbar-transparent .social-links li {
-      margin-right: 5px; }
+      margin-right: 4px; }
   .header .navbar {
     padding: 70px 0;
     border-bottom: unset; }
@@ -146,6 +143,8 @@ tab device
     padding: 20px 0; }
   .header.header-classic ul.navbar-nav > li > a {
     color: #fff; }
+  .header-transparent.header-standard ul.navbar-nav > li > a {
+    color: #fff; }
   /* slide item */
   .slider-item .slider-content {
     padding: 310px 0 100px; }
@@ -186,8 +185,6 @@ tab device
   /* ts annual report */
   .ts-annual-report .annual-report-tabs-item .column-title {
     font-size: 35px; }
-  .ts-annual-report .ts-archive {
-    margin-top: 110px; }
   /* sidebar */
   .ads-box .btn,
   .sidebar .btn {
@@ -216,7 +213,16 @@ tab device
   .ts-branches-wrapper {
     margin-bottom: 70px; }
   .ts-jobs-wrapper {
-    padding: 0; } }
+    padding: 0; }
+  .about-gallery .gallery-3 {
+    margin-top: 30px; }
+  .ts-service-wrapper.side-border {
+    border: none; }
+  .ts-service-wrapper.bottom-border {
+    border: none; }
+  .ts-blog .two {
+    border-left-color: #d2d2d2;
+    border-right-color: #d2d2d2; } }
 
 /*==========================
 small device /mobile sm and large
@@ -292,6 +298,8 @@ small device /mobile sm and large
     color: #fff; }
   .header.header-classic ul.navbar-nav > li > a {
     color: #fff; }
+  .header-transparent.header-standard ul.navbar-nav > li > a {
+    color: #fff; }
   .quote-btn.btn {
     display: none; }
   .nav-search {
@@ -339,8 +347,6 @@ small device /mobile sm and large
   /* ts annual report */
   .ts-annual-report .annual-report-tabs-item .column-title {
     font-size: 35px; }
-  .ts-annual-report .ts-archive {
-    margin-top: 110px; }
   /* history area */
   .history-area .carousel-item-prev,
   .history-area .carousel-item-next,
@@ -366,4 +372,15 @@ small device /mobile sm and large
   .ts-branches-wrapper {
     margin-bottom: 70px; }
   .ts-footer .week-schedule li {
-    width: 70%; } }
+    width: 70%; }
+  .about-gallery .gallery-3 {
+    margin-top: 30px; }
+  .ts-service-wrapper.side-border {
+    border: none; }
+  .ts-service-wrapper.bottom-border {
+    border: none; }
+  .ts-blog .two {
+    border-left-color: #d2d2d2;
+    border-right-color: #d2d2d2; }
+  .ts-service-strategic .ts-service-wrapper .service-box-info {
+    padding-right: 0; } }
