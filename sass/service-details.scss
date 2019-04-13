@@ -1,6 +1,7 @@
 /*=============================
  Service Details
 ============================== */
+/* service menu */
 .service-menu {
 
     li {
@@ -26,20 +27,27 @@
 .widget.no-padding {
     padding: 0;
 }
+
 .ts-service-details-wrapper {
-    .intro-video .intro-bg {
-        min-height: 280px;
+    .intro-video {
+        .intro-bg {
+            min-height: 280px;
+        }
     }
-    .requirement-list li {
-        width: 100%;
+
+    .requirement-list {
+        li {
+            width: 100%;
+        }
     }
 }
 
-
+/* work process list */
 .work-process-list {
     position: relative;
     z-index: 1;
     margin-top: 40px;
+
     &:after {
         position: absolute;
         left: 20px;
@@ -50,32 +58,36 @@
         border: 1px dashed #ffae99;
         z-index: -1;
     }
+
     li {
         position: relative;
         margin-bottom: 30px;
     }
+
+    .working-num {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        width: 40px;
+        height: 40px;
+        background: #ff5d34;
+        line-height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+    }
+
+    .working-text {
+        left: 60px;
+        top: 5px;
+        padding-left: 60px;
+    }
 }
-.working-num {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 700;
-    width: 40px;
-    height: 40px;
-    background: #ff5d34;
-    line-height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    position: absolute;
-    left: 0;
-}
-.facilities li {
-    width: 100%;
-}
-.title-regular {
-    font-weight: 300;
-}
-.working-text {
-    left: 60px;
-    top: 5px;
-    padding-left: 60px;
+
+/* facilities */
+.ts-benefit {
+    .facilities li {
+        width: 100%;
+    }
 }

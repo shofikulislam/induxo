@@ -3,64 +3,82 @@ tab rotate
 ===========================*/
 @media (min-width: 992px) and (max-width: 1200px) {
 
-     /* header social links */
-    .social-links li {
-        margin-right: 15px;
-    }
-
-     /* header nav */
-    .header ul.navbar-nav>li {
-        margin-left: 20px;
-
-        a {
-            margin-left: 0;
-            font-size: 13px;
+    /* header social links */
+    .topbar-transparent {
+        .social-links li {
+            margin-right: 15px;
         }
     }
 
-     /* slider item */
+    /* header nav */
+    .header {
+        ul {
+            &.navbar-nav {
+                >li {
+                    margin-left: 15px;
+
+                    a {
+                        margin-left: 0;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /* slider item */
     .slider-item {
         .slider-content {
-            padding: 310px 0 182px;
             .slider-title {
                 font-size: 45px;
             }
         }
-        
+
+        .slider-right-content {
+            padding-left: 0;
+        }
+
     }
 
 
-     /* nav search */
-     .nav-search {
-        right: 14%;
-        i {
-            font-size: 15px;
+    /* nav search */
+    .search-box {
+        margin: 0 15px;
+
+        .nav-search {
+
+            i {
+                font-size: 15px;
+            }
+        }
+
+        .search-block {
+
+            .search-close {
+                font-size: 25px;
+            }
         }
     }
-    
-    .search-block {
-        right: 14%;
-        .search-close {
-            font-size: 25px;
-        }
-    }
 
-    
 
-     /* btn */
+    /* btn */
     .btn {
         padding: 0px 15px;
         font-size: 13px;
     }
 
-     /* ts funfact */
-    .ts-single-funfact .funfact-title {
-        font-size: 14px;
-    }
+    /* ts funfact */
 
     .ts-single-funfact {
         padding: 0 30px;
+
+        .funfact-title {
+            font-size: 14px;
+        }
     }
+
     /* about area */
     .about-area {
         .column-title {
@@ -68,35 +86,39 @@ tab rotate
         }
     }
 
-     /* ts facts area */
+    /* ts facts area */
     .ts-facts-area {
         .column-title {
             font-size: 35px;
         }
+
         .intro-right-content {
             padding: 95px 90px 64px 50px;
             display: inline-block;
         }
+
         .intro-right-content {
             .intro-icon span {
                 font-size: 15px;
             }
         }
     }
+
     /* ts features */
-    
+
     .ts-features,
     .team-area,
     .ts-work-process {
         .column-title {
             font-size: 33px;
         }
+
         .ts-features-content p::after {
             left: 50px;
         }
     }
 
-     /* ts blog */
+    /* ts blog */
 
     .ts-blog {
         .single-blog {
@@ -106,12 +128,13 @@ tab rotate
         }
     }
 
-     /* history area*/
+    /* history area*/
     .history-area {
         .history-content {
             padding-left: 35px;
             padding-right: 0;
         }
+
         .carousel-indicators li.active:after {
             display: none;
         }
@@ -121,20 +144,27 @@ tab rotate
         width: 100%;
     }
 
-   
+
     /* ts quote area*/
     .ts-quote-area {
         .column-title {
             font-size: 33px;
         }
     }
-    
-        .cta-centred{
-            .column-title {
-                font-size: 38px;
+
+    .cta-centred {
+        .column-title {
+            font-size: 38px;
+        }
+    }
+    .ts-service-strategic {
+        .ts-service-wrapper {
+            .ts-title {
+                padding: 20px 10px 15px 10px;
             }
         }
-    
+    }
+
 }
 
 /*==========================
@@ -142,23 +172,25 @@ tab device
 ===========================*/
 
 @media(min-width: 768px) and (max-width: 991px) {
-    
+
     .topbar-transparent {
         padding: 8px 0;
+
         .top-info li {
             margin-bottom: 5px;
         }
+
         li i {
             font-size: 12px;
         }
+
         .social-links li {
             margin-right: 4px;
         }
     }
-    
+
     .header .navbar {
-        padding: 70px 0;
-        border-bottom: unset;
+        padding: 25px 0;
     }
 
     /* navbar toggler*/
@@ -167,10 +199,12 @@ tab device
             border-color: #fa6742;
             background-color: #fa6742;
             color: #fff;
+
             &:hover {
                 cursor: pointer;
             }
         }
+
         .navbar-toggler-icon {
             background-image: none;
             color: #fff;
@@ -182,7 +216,7 @@ tab device
             margin: 12px 0;
         }
     }
-    
+
 
     .nav-search {
         display: none;
@@ -221,56 +255,53 @@ tab device
         display: block;
         padding-left: 20px !important;
         padding-right: 20px !important;
+
+        a {
+            line-height: normal !important;
+            border-bottom: 1px solid #38393d;
+            padding: 15px 0;
+            display: block;
+            min-width: 350px;
+        }
+
+        &:last-child a {
+            border-bottom: 0;
+        }
     }
 
-    ul.navbar-nav li a {
-        line-height: normal !important;
-        border-bottom: 1px solid #38393d;
-        padding: 15px 0;
-        display: block;
-        min-width: 350px;
-    }
-
-    ul.navbar-nav li:last-child a {
-        border-bottom: 0;
-    }
 
     .collapse.show {
         .dropdown-menu {
             background: #222;
         }
+
         .navbar-nav li .dropdown-menu li a {
             color: #fff;
         }
     }
+
     .header.sticky .navbar {
         padding: 20px 0;
     }
+
     .header.header-classic ul.navbar-nav>li>a {
         color: #fff;
     }
-    .header-transparent.header-standard ul.navbar-nav > li > a{
+
+    .header-transparent.header-standard ul.navbar-nav>li>a {
         color: #fff;
     }
-    /* slide item */
-    .slider-item {
-        .slider-content {
-            padding: 310px 0 100px;
-        }
-        .slider-left-img {
-            display: none;
-        }
 
-    }
     /*about area */
     .about-area .btn-area {
         margin-bottom: 50px;
     }
+
     /* cta area */
     .cta-area .column-title {
         font-size: 35px;
     }
-    
+
     /* contact */
     .contact {
         margin-bottom: 30px;
@@ -283,27 +314,32 @@ tab device
 
     /* history area */
     .history-area {
+
         .carousel-item-next,
         .carousel-item-prev,
-        .carousel-item.active{
+        .carousel-item.active {
             display: inline-block;
         }
+
         .carousel-indicators li {
             margin-left: 0;
             margin-right: 0;
         }
+
         .carousel-indicators li.active:after {
             display: none;
         }
+
         .history-content {
             padding-left: 47px;
             max-height: none;
         }
+
         .history-img img {
             width: 100%;
         }
     }
-    
+
 
     /* team */
     .ts-team-wrapper {
@@ -344,8 +380,10 @@ tab device
 
     .ts-features-content {
         text-align: left;
+
         p {
             padding-left: 20px;
+
             &::after {
                 left: 0;
             }
@@ -365,42 +403,47 @@ tab device
     .project-details-text {
         margin-top: 30px;
     }
+
     .ts-branches-wrapper {
         margin-bottom: 70px;
     }
+
     .ts-jobs-wrapper {
         padding: 0;
     }
+
     .about-gallery .gallery-3 {
         margin-top: 30px;
     }
-    
+
     .ts-service-wrapper.side-border {
         border: none;
     }
-    
+
     .ts-service-wrapper.bottom-border {
         border: none;
     }
-    
+
     .ts-blog .two {
         border-left-color: #d2d2d2;
         border-right-color: #d2d2d2;
     }
-    
+
 }
 
 /*==========================
 small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
-    
+
     /* topbar transparent */
     .topbar-transparent {
         text-align: center;
+
         .top-info li {
             margin-bottom: 8px;
         }
+
         .social-links {
             text-align: center;
             margin-top: 5px;
@@ -410,21 +453,22 @@ small device /mobile sm and large
     .header.sticky .navbar {
         padding: 20px 0;
     }
-    .header .navbar {
-        padding: 120px 0;
-        border-bottom: unset;
-    }
 
+    .header .navbar {
+        padding: 25px 0;
+    }
 
     .navbar-light {
         .navbar-toggler {
             border-color: #fa6742;
             background-color: #fa6742;
             color: #fff;
+
             &:hover {
                 cursor: pointer;
             }
         }
+
         .navbar-toggler-icon {
             background-image: none;
             color: #fff;
@@ -435,7 +479,7 @@ small device /mobile sm and large
             line-height: 20px;
             margin: 12px 0;
         }
-        
+
     }
 
     .nav-search {
@@ -445,6 +489,8 @@ small device /mobile sm and large
     .header-transparent .navbar-nav {
         background: #222;
         padding: 20px 0;
+        width: 100%;
+        margin-top: 20px;
     }
 
     .header ul.navbar-nav>li>a {
@@ -455,17 +501,14 @@ small device /mobile sm and large
         display: none;
     }
 
-    .header.header-transparent ul.navbar-nav {
-        width: 100%;
-        margin-top: 20px;
-    }
+    .header ul.navbar-nav li {
+        .dropdown-menu {
+            padding: 10px 0;
 
-    .header ul.navbar-nav li .dropdown-menu {
-        padding: 10px 0;
-    }
-
-    .header ul.navbar-nav li .dropdown-menu li a {
-        padding: 12px 30px;
+            a {
+                padding: 12px 30px;
+            }
+        }
     }
 
     ul.navbar-nav li a i,
@@ -482,18 +525,20 @@ small device /mobile sm and large
     ul.navbar-nav>li {
         display: block;
         padding-right: 20px !important;
-    }
 
-    ul.navbar-nav li a {
-        line-height: normal !important;
-        border-bottom: 1px solid #38393d;
-        padding: 15px 0;
-        display: block;
-        min-width: 350px;
-    }
+        a {
+            line-height: normal !important;
+            border-bottom: 1px solid #38393d;
+            padding: 15px 0;
+            display: block;
+            min-width: 350px;
+        }
 
-    ul.navbar-nav li:last-child a {
-        border-bottom: 0;
+        &:last-child {
+            a {
+                border-bottom: 0;
+            }
+        }
     }
 
     .collapse.show .dropdown-menu {
@@ -507,9 +552,11 @@ small device /mobile sm and large
     .header.header-classic ul.navbar-nav>li>a {
         color: #fff;
     }
-    .header-transparent.header-standard ul.navbar-nav > li > a{
+
+    .header-transparent.header-standard ul.navbar-nav>li>a {
         color: #fff;
     }
+
     .quote-btn.btn {
         display: none;
     }
@@ -517,16 +564,19 @@ small device /mobile sm and large
     .nav-search {
         display: none;
     }
+
     .slider-item {
         .slider-content {
             .slider-title {
                 font-size: 40px;
             }
         }
-        .slider-left-img {
-            display: none;
+
+        .slider-right-content {
+            padding-left: 0;
         }
     }
+
     .about-area {
         .btn-area {
             margin-bottom: 50px;
@@ -535,40 +585,48 @@ small device /mobile sm and large
 
     .cta-area {
         text-align: center;
+
         .column-title {
             font-size: 40px;
         }
+
         .btn-area {
             margin-top: 25px;
             text-align: center;
         }
 
     }
+
     /* ts features */
     .ts-features {
         .section-title {
             font-size: 30px;
         }
+
         .ts-features-content {
             text-align: left;
-            p{
+
+            p {
                 padding-left: 20px;
+
                 &::after {
                     left: 0;
                 }
             }
         }
-        
+
     }
 
     .ts-service-area .ts-service-wrapper .service-box-info {
         padding-right: 165px;
     }
+
     /* ts location */
     .location-wrapper {
         .map-image {
             display: none;
         }
+
         .location {
             display: block;
             position: static;
@@ -582,6 +640,7 @@ small device /mobile sm and large
     .location_indicator {
         display: none;
     }
+
     .ts-footer .footer-social li a i {
         width: 28px;
         height: 28px;
@@ -599,60 +658,75 @@ small device /mobile sm and large
     }
 
     /* history area */
-    .history-area{
+    .history-area {
+
         .carousel-item-prev,
         .carousel-item-next,
         .carousel-item.active {
             display: inline-block;
         }
-        .carousel-indicators li{
+
+        .carousel-indicators li {
             margin-left: 0;
             margin-right: 0;
         }
+
         .carousel-indicators li.active:after {
             display: none;
         }
-    } 
-    
+    }
+
     .requirement-list li {
         width: 100%;
     }
+
     .ts-partner-list {
         grid-template-columns: repeat(1, 1fr);
-        li:before, li:after {
+
+        li:before,
+        li:after {
             display: none;
         }
     }
+
     .ts-jobs-wrapper {
         margin-bottom: 50px;
     }
+
     .service-details-text,
     .project-details-text {
         margin-top: 30px;
     }
+
     .ts-branches-wrapper {
         margin-bottom: 70px;
     }
-    .ts-footer .week-schedule li{
+
+    .ts-footer .week-schedule li {
         width: 70%;
     }
+
     .about-gallery .gallery-3 {
         margin-top: 30px;
     }
-    
+
     .ts-service-wrapper.side-border {
         border: none;
     }
-    
+
     .ts-service-wrapper.bottom-border {
         border: none;
     }
-    
+
     .ts-blog .two {
         border-left-color: #d2d2d2;
         border-right-color: #d2d2d2;
     }
+
     .ts-service-strategic .ts-service-wrapper .service-box-info {
         padding-right: 0;
+    }
+    .ts-newsletter {
+        margin-bottom: 20px;
     }
 }

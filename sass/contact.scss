@@ -13,8 +13,9 @@
   padding: 65px;
   box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
   background: #fff;
-  padding-bottom: 90px;
+  padding-bottom: 100px;
   padding-top: 60px;
+  height: 100%;
 
 }
 
@@ -31,37 +32,25 @@
   font-size: 14px;
 }
 
-.ts-form .form-control:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.ts-form {
+  .form-control{
+    &:focus {
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    &.message-box {
+      resize: none;
+      height: 133px;
+      margin-bottom: 30px;
+    }
+    &::placeholder {
+      color: #999999;
+    }
+  }
 }
 
-.ts-form .form-control.message-box {
-  resize: none;
-  height: 133px;
-  margin-bottom: 30px;
-}
 
-.ts-form .form-control::-webkit-input-placeholder {
-  color: #999999;
-}
-
-.ts-form .form-control:-ms-input-placeholder {
-  color: #999999;
-}
-
-.ts-form .form-control::-ms-input-placeholder {
-  color: #999999;
-}
-
-.ts-form .form-control::placeholder {
-  color: #999999;
-}
-
-.ts-form .form-submit {
-  text-align: right;
-}
 
 .ts-form input::-webkit-outer-spin-button,
 .ts-form input::-webkit-inner-spin-button {
@@ -157,7 +146,7 @@ select.form-control:not([size]):not([multiple]) {
   margin-bottom: 50px;
 }
 .ts-quote-area .ts-maps-wraper .map {
-  height: 681px;
+  height: 686px;
 }
 .quote_form {
   input::input-placeholder,
