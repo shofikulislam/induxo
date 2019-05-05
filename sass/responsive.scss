@@ -19,6 +19,7 @@ tab rotate
 
                     a {
                         margin-left: 0;
+                        margin-right: 0;
                         font-size: 13px;
                     }
                 }
@@ -157,6 +158,7 @@ tab rotate
             font-size: 38px;
         }
     }
+
     .ts-service-strategic {
         .ts-service-wrapper {
             .ts-title {
@@ -172,7 +174,9 @@ tab device
 ===========================*/
 
 @media(min-width: 768px) and (max-width: 991px) {
-
+    section, .section-padding {
+        padding: 70px 0;
+    }
     .topbar-transparent {
         padding: 8px 0;
 
@@ -180,8 +184,11 @@ tab device
             margin-bottom: 5px;
         }
 
-        li i {
-            font-size: 12px;
+        li {
+            font-size: 14px;
+            i {
+                font-size: 12px;
+            }
         }
 
         .social-links li {
@@ -218,11 +225,11 @@ tab device
     }
 
 
-    .nav-search {
+    .search-box{
         display: none;
     }
 
-    .header-transparent .navbar-nav {
+    .header .navbar-nav {
         background: #222;
         padding: 20px 0;
     }
@@ -235,11 +242,19 @@ tab device
         display: none;
     }
 
-    .header.header-transparent ul.navbar-nav {
+    .header ul.navbar-nav {
         width: 100%;
         margin-top: 20px;
+       li{
+            .dropdown-menu{
+                box-shadow: none;
+            }
+       }
     }
-
+    .header ul.navbar-nav > li:hover > a:before, 
+    .header ul.navbar-nav > li.active > a:before{
+        border-color: transparent;
+    }
     ul.navbar-nav li a i,
     .dropdown-submenu>a:after {
         background: #000;
@@ -252,16 +267,16 @@ tab device
     }
 
     ul.navbar-nav>li {
-        display: block;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        // display: block;
+        // padding-left: 20px !important;
+        // padding-right: 20px !important;
 
         a {
             line-height: normal !important;
             border-bottom: 1px solid #38393d;
             padding: 15px 0;
             display: block;
-            min-width: 350px;
+            // min-width: 350px;
         }
 
         &:last-child a {
@@ -282,8 +297,9 @@ tab device
 
     .header.sticky .navbar {
         padding: 20px 0;
+        display: none;
     }
-
+    
     .header.header-classic ul.navbar-nav>li>a {
         color: #fff;
     }
@@ -291,15 +307,29 @@ tab device
     .header-transparent.header-standard ul.navbar-nav>li>a {
         color: #fff;
     }
+    .slider-item .slider-inner{
+        padding-top: 135px;
+    }
+    .ts-single-funfact {
+        .funfact-title {
+            margin-bottom: 18px;
+        }
+    }
 
     /*about area */
     .about-area .btn-area {
         margin-bottom: 50px;
     }
-
+     
     /* cta area */
-    .cta-area .column-title {
-        font-size: 35px;
+    .cta-area {
+        .column-title {
+            font-size: 35px;
+        }
+
+        .btn {
+            padding: 0 28px;
+        }
     }
 
     /* contact */
@@ -309,11 +339,12 @@ tab device
 
     /* ts facts area */
     .ts-facts-area .intro-right-content {
-        margin-left: 100px;
+        margin-left: 0;
+        padding: 65px 0px 65px 55px;
     }
 
     /* history area */
-    .history-area {
+     .history-area #history-slid {
 
         .carousel-item-next,
         .carousel-item-prev,
@@ -429,6 +460,10 @@ tab device
         border-right-color: #d2d2d2;
     }
 
+    .blog-box {
+        margin-bottom: 30px;
+    }
+
 }
 
 /*==========================
@@ -436,12 +471,24 @@ small device /mobile sm and large
 ===========================*/
 @media (max-width: 767px) {
 
+    section,
+    .section-padding {
+        padding: 60px 0;
+    }
+    .banner-title {
+        font-size: 45px;
+    }
+    .column-title-large {
+        line-height: 55px;
+    }
+
     /* topbar transparent */
     .topbar-transparent {
         text-align: center;
 
         .top-info li {
             margin-bottom: 8px;
+            margin-right: 0;
         }
 
         .social-links {
@@ -450,8 +497,12 @@ small device /mobile sm and large
         }
     }
 
-    .header.sticky .navbar {
-        padding: 20px 0;
+    .header.sticky {
+        padding: 5px 0;
+        .navbar {
+            padding: 5px 0;
+            display: none;
+        }
     }
 
     .header .navbar {
@@ -472,21 +523,22 @@ small device /mobile sm and large
         .navbar-toggler-icon {
             background-image: none;
             color: #fff;
-            width: 30px;
-            height: 20px;
-            padding-top: 1px;
+            width: 10px;
+            height: 21px;
+            // padding-top: 1px;
             font-size: 20px;
             line-height: 20px;
-            margin: 12px 0;
+            // margin: 12px 0;
+            margin-right: 10px;
         }
 
     }
 
-    .nav-search {
+    .search-box {
         display: none;
     }
 
-    .header-transparent .navbar-nav {
+    .header .navbar-nav {
         background: #222;
         padding: 20px 0;
         width: 100%;
@@ -504,12 +556,16 @@ small device /mobile sm and large
     .header ul.navbar-nav li {
         .dropdown-menu {
             padding: 10px 0;
-
+            box-shadow: none;
             a {
                 padding: 12px 30px;
             }
         }
     }
+    .header ul.navbar-nav > li:hover > a:before,
+     .header ul.navbar-nav > li.active > a:before{
+         border-color: transparent;
+     }
 
     ul.navbar-nav li a i,
     .dropdown-submenu>a:after {
@@ -518,20 +574,18 @@ small device /mobile sm and large
         width: 36px;
         height: 28px;
         line-height: 28px;
-        margin-top: -5px;
+        margin-top: 5px;
         text-align: center;
     }
 
     ul.navbar-nav>li {
-        display: block;
-        padding-right: 20px !important;
 
         a {
             line-height: normal !important;
             border-bottom: 1px solid #38393d;
             padding: 15px 0;
             display: block;
-            min-width: 350px;
+            // min-width: 350px;
         }
 
         &:last-child {
@@ -561,19 +615,82 @@ small device /mobile sm and large
         display: none;
     }
 
-    .nav-search {
+    .search-box {
         display: none;
     }
-
     .slider-item {
-        .slider-content {
-            .slider-title {
-                font-size: 40px;
+        .slider-inner {
+            padding-top: 135px;
+
+            .slider-content {
+                .slider-title {
+                    font-size: 30px;
+                    line-height: 38px;
+                }
+            }
+
+            .slider-right-content {
+                padding-left: 0;
+            }
+        }
+        .slider-wrapper{
+            height: 680px;
+        }
+    }
+    .ts-about-wrapper {
+        .column-title {
+            font-size: 30px;
+        }
+    }
+   
+    /* history area */
+    .history-area #history-slid {
+
+        .carousel-item-next,
+        .carousel-item-prev,
+        .carousel-item.active {
+            display: inline-block;
+        }
+
+        // .carousel-indicators li {
+        //     margin-left: 0;
+        //     margin-right: 0;
+        // }
+
+        .carousel-indicators {
+            
+            display: block;
+            &:before {
+                display: none;
+            }
+            li{
+                &.active:after {
+                    display: none;
+                }
+            }
+            
+        }
+        
+
+        .history-content {
+            max-height: none;
+            padding-right: 0;
+            .column-title {
+                line-height: 45px;
             }
         }
 
-        .slider-right-content {
-            padding-left: 0;
+        .history-img img {
+            width: 100%;
+        }
+    }
+    .location-wrapper .location {
+        width: 100% !important;
+    }
+    .ts-single-funfact {
+        margin-bottom: 30px;
+        .funfact-title {
+            margin-bottom: 18px;
         }
     }
 
@@ -587,7 +704,7 @@ small device /mobile sm and large
         text-align: center;
 
         .column-title {
-            font-size: 40px;
+            font-size: 30px;
         }
 
         .btn-area {
@@ -596,13 +713,17 @@ small device /mobile sm and large
         }
 
     }
+    .section-title, .column-title{
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
 
     /* ts features */
     .ts-features {
         .section-title {
             font-size: 30px;
         }
-
+    }
         .ts-features-content {
             text-align: left;
 
@@ -615,10 +736,30 @@ small device /mobile sm and large
             }
         }
 
+    
+
+    .intro-right-content {
+        padding: 60px 30px 50px 30px;
+        max-width: 100%;
+
+        .column-title {
+            line-height: 38px;
+        }
     }
 
-    .ts-service-area .ts-service-wrapper .service-box-info {
-        padding-right: 165px;
+    .ts-blog{
+        .row{
+            margin: 0;
+        }
+        .single-blog{
+            padding: 25px 15px;
+        }
+    }
+    .blog-box {
+        margin-bottom: 30px;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
     }
 
     /* ts location */
@@ -657,24 +798,7 @@ small device /mobile sm and large
 
     }
 
-    /* history area */
-    .history-area {
 
-        .carousel-item-prev,
-        .carousel-item-next,
-        .carousel-item.active {
-            display: inline-block;
-        }
-
-        .carousel-indicators li {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        .carousel-indicators li.active:after {
-            display: none;
-        }
-    }
 
     .requirement-list li {
         width: 100%;
@@ -698,6 +822,28 @@ small device /mobile sm and large
         margin-top: 30px;
     }
 
+    .ts-service-area{
+        [class*="col-"]:last-of-type{
+            .ts-service-wrapper{
+                margin-bottom: 0;
+
+            }
+        }
+    }
+    .ts-features{
+        [class*="col-"]:last-of-type{
+            .recent-project-wrapper{
+                margin-bottom: 0;
+
+            }
+        }
+    }
+    .ts-service-wrapper .service-box-info:after{
+        display: none;
+    }
+    .ts-service-strategic {
+        padding-bottom: 30px;
+    }
     .ts-branches-wrapper {
         margin-bottom: 70px;
     }
@@ -726,7 +872,27 @@ small device /mobile sm and large
     .ts-service-strategic .ts-service-wrapper .service-box-info {
         padding-right: 0;
     }
+
     .ts-newsletter {
         margin-bottom: 20px;
+    }
+    
+    .footer-left-content .contact {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .copy-right .copyright-text {
+        text-align: center;
+    }
+
+    .footer-social {
+        float: unset;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .qutoe-form-inner,
+    .ts-contact-form {
+        padding: 50px 5px;
     }
 }

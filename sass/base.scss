@@ -36,12 +36,17 @@
 
 
 
-body,
-p {
+body
+ {
    font-family: $open-sans;
    line-height: 26px;
    font-size: 15px;
    color: #666666;
+   border: 0;
+   margin: 0;
+   padding: 0;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -51,11 +56,6 @@ h4,
 h5,
 h6 {
    color: #101010;
-   font-family: $Zilla;
-}
-
-h1,
-h2 {
    font-family: $Zilla;
 }
 
@@ -100,11 +100,7 @@ html {
 }
 
 body {
-   border: 0;
-   margin: 0;
-   padding: 0;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 ul {
@@ -349,7 +345,9 @@ img.pull-right {
    text-transform: uppercase;
 }
 
-// btn 
+/*==========================
+      Default btn
+===========================*/
 .btn {
    font-size: 14px;
    font-weight: 700;
@@ -435,7 +433,7 @@ img.pull-right {
    font-size: 36px;
    font-weight: 300;
    color: $black-color;
-   margin-bottom: 80px;
+   margin-bottom: 70px;
 
    span {
       font-weight: 700;
@@ -469,13 +467,15 @@ img.pull-right {
 }
 
 .black-color {
-   color: #101010;
+   color: #101010 !important;
 }
 
 .title-white {
    color: #fff;
 }
-
+.contact-bg {
+   background: #f7f9fb;
+ }
 .white-bg {
    background: #fff !important;
 }
@@ -487,7 +487,20 @@ img.pull-right {
 .solid-bg-two {
    background: #f2f2f2;
 }
+.alice-blue-bg {
+   background: $alice-blue-bg;
+}
 
+.bg-bottom {
+   background-size: 100% !important;
+   background-position: center bottom !important;
+}
+.primary-bg {
+   background: $primary-color;
+}
+.sidebar.primary-bg {
+   background-color: #ff5c23 !important;
+}
 .overlay {
    position: relative;
    z-index: 1;
@@ -518,15 +531,3 @@ img.pull-right {
    width: 100%;
 }
 
-.alice-blue-bg {
-   background: $alice-blue-bg;
-}
-
-.bg-bottom {
-   background-size: 100% !important;
-   background-position: center bottom !important;
-}
-
-.primary-bg {
-   background: $primary-color;
-}

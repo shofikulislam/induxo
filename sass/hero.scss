@@ -1,0 +1,122 @@
+/*==========================
+      hero area
+===========================*/
+.hero-area {
+    padding: 0;
+ }
+ 
+ .slider-item {
+    color: #fff;
+    @include background-content();
+    position: relative;
+ 
+    &:before {
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       content: '';
+    }
+ 
+    .slider-inner {
+       vertical-align: middle;
+       padding-top: 75px;
+    }
+ 
+    .slider-wrapper {
+       height: 820px;
+       width: 100%;
+    }
+ 
+    .slider-content {
+       z-index: 1;
+       position: relative;
+ 
+       .slider-info {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          margin-bottom: 25px;
+          color: #000;
+          background: #fff;
+          display: inline-block;
+          padding: 3px 18px;
+          text-transform: uppercase;
+ 
+       }
+ 
+       .slider-title {
+          font-size: 48px;
+          font-weight: 300;
+          color: $white-color;
+          line-height: 65px;
+          margin-bottom: 30px;
+ 
+          span {
+             font-weight: 700;
+          }
+ 
+       }
+ 
+       .slider-btn-area {
+          .btn {
+             height: 55px;
+             line-height: 55px;
+             padding: 0 44px;
+ 
+             &.fill {
+                padding: 0 25px;
+             }
+          }
+       }
+ 
+    }
+ 
+    /* slider right content */
+    .slider-right-content {
+       padding-left: 60px;
+ 
+       .slider-title {
+          color: #666666;
+          font-size: 50px;
+ 
+          span {
+             color: #101010;
+          }
+       }
+ 
+       .slider-info {
+          background: #101010;
+          color: #fff;
+       }
+    }
+ }
+ 
+ 
+ // ==========banner area============//
+ 
+ 
+    .banner-title {
+       font-size: 64px;
+       color: #fff;
+       line-height: 70px;
+    }
+ 
+    .banner-bg {
+       @include background-content();
+       padding: 138px 0;
+       position: relative;
+       z-index: 1;
+ 
+       &::after {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          content: '';
+          background: rgba(0, 0, 0, 0.2);
+          z-index: -1;
+       }
+    }

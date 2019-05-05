@@ -61,41 +61,88 @@ jQuery(function ($) {
       $('.search-block').fadeOut(350);
       $('.nav-search').fadeIn(350);
    });
+
+
+   $(document).on('mouseup', function (e) {
+      var container = $(".search-box");
+
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+         $('.search-block').fadeOut(350);
+         $('.nav-search').fadeIn(350);
+      }
+
+  });
    /* ---------------------------------------------
                      Hero Area
    ------------------------------------------------ */
-
-   $(".hero-area").owlCarousel({
-      items: 1,
-      loop: true,
-      autoplay: true,
-      nav: true,
-      dots: false,
-      autoplayTimeout: 8000,
-      autoplayHoverPause: true,
-      mouseDrag: false,
-      smartSpeed: 1100,
-      navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
-      responsive: {
-         0: {
-            items: 1,
-            nav: false,
-         },
-         600: {
-            items: 1,
-            nav: false,
-         },
-         1000: {
-            nav: true,
+   if ($('.hero-area').length > 0) {
+      $(".hero-area").owlCarousel({
+         items: 1,
+         loop: true,
+         autoplay: true,
+         nav: true,
+         dots: false,
+         autoplayTimeout: 8000,
+         autoplayHoverPause: true,
+         mouseDrag: false,
+         smartSpeed: 1100,
+         navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
+         responsive: {
+            0: {
+               items: 1,
+               nav: false,
+            },
+            600: {
+               items: 1,
+               nav: true,
+            },
+            1000: {
+               nav: true,
+            }
          }
-      }
+   
+      });
+   }
 
-   });
+
    /* ---------------------------------------------
                projects details slider
    ------------------------------------------------ */
+   if ($('.ts-projects-slider').length > 0) {
+      $(".ts-projects-slider").owlCarousel({
+         items: 1,
+         loop: true,
+         autoplay: true,
+         nav: true,
+         dots: false,
+         autoplayTimeout: 8000,
+         autoplayHoverPause: true,
+         mouseDrag: false,
+         smartSpeed: 1100,
+         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+         responsive: {
+            0: {
+               items: 1,
+               nav: false,
+            },
+            600: {
+               items: 1,
+               nav: false,
+            },
+            1000: {
+               nav: true,
+            }
+         }
+   
+      });
+   }
 
-   $(".ts-projects-slider").owlCarousel({
+ 
+   /* ---------------------------------------------
+                     Testimonial Area
+   ------------------------------------------------ */
+   if ($('.testimonial-carousel').length > 0) {
+      $(".testimonial-carousel").owlCarousel({
       items: 1,
       loop: true,
       autoplay: true,
@@ -119,28 +166,12 @@ jQuery(function ($) {
             nav: true,
          }
       }
-
    });
-   /* ---------------------------------------------
-                     Testimonial Area
-   ------------------------------------------------ */
-   $(".testimonial-carousel").owlCarousel({
-      items: 1,
-      loop: true,
-      autoplay: true,
-      nav: true,
-      dots: false,
-      autoplayTimeout: 8000,
-      autoplayHoverPause: true,
-      mouseDrag: false,
-      smartSpeed: 1100,
-      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-
-   });
+}
    /* ---------------------------------------------
                      About Area
    ------------------------------------------------ */
-
+   if ($('.ts-about-image-wrapper').length > 0) {
    $(".ts-about-image-wrapper").owlCarousel({
 
       loop: false,
@@ -156,11 +187,11 @@ jQuery(function ($) {
       responsive: {
          0: {
             items: 1,
-            nav: false,
+            nav: true,
          },
          600: {
             items: 1,
-            nav: false,
+            nav: true,
          },
          1000: {
             nav: true,
@@ -168,45 +199,49 @@ jQuery(function ($) {
       }
 
    });
+   }
+
    /* ---------------------------------------------
                      Features Area
    ------------------------------------------------ */
+   if ($('.features-project').length > 0) {
+      $(".features-project").owlCarousel({
 
-   $(".features-project").owlCarousel({
-
-      loop: true,
-      autoplay: false,
-      autoplayHoverPause: true,
-      nav: true,
-      margin: 5,
-      dots: false,
-      mouseDrag: true,
-      touchDrag: true,
-      smartSpeed: 900,
-      navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-      items: 4,
-      responsive: {
-         0: {
-            items: 1,
-            nav: false,
-         },
-         600: {
-            items: 3,
-            nav: false,
-         },
-         1000: {
-            nav: true,
+         loop: true,
+         autoplay: false,
+         autoplayHoverPause: true,
+         nav: true,
+         margin: 5,
+         dots: false,
+         mouseDrag: true,
+         touchDrag: true,
+         smartSpeed: 900,
+         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+         items: 4,
+         responsive: {
+            0: {
+               items: 1,
+               nav: false,
+            },
+            600: {
+               items: 3,
+               nav: false,
+            },
+            1000: {
+               nav: true,
+            }
          }
-      }
-
-   });
+   
+      });
+   }
+  
 
    /* ---------------------------------------------
                      Clients Area
    ------------------------------------------------ */
-
+if($(".partners-carousel").length > 0){
+   
    $(".partners-carousel").owlCarousel({
-
       loop: true,
       autoplay: true,
       autoplayHoverPause: true,
@@ -233,62 +268,66 @@ jQuery(function ($) {
       }
 
    });
+}
+  
 
    /*==========================================================
                            funfact 
      ======================================================================*/
-   var skl = true;
-   $('.ts-funfact').appear();
-
-   $('.ts-funfact').on('appear', function () {
-      if (skl) {
-         $('.counterUp').each(function () {
-            var $this = $(this);
-            jQuery({
-               Counter: 0
-            }).animate({
-               Counter: $this.attr('data-counter')
-            }, {
-               duration: 8000,
-               easing: 'swing',
-               step: function () {
-                  var num = Math.ceil(this.Counter).toString();
-                  if (Number(num) > 99999) {
-                     while (/(\d+)(\d{3})/.test(num)) {
-                        num = num.replace(/(\d+)(\d{3})/, '');
+     if($(".ts-funfact").length > 0){
+        
+      var skl = true;
+      $('.ts-funfact').appear();
+   
+      $('.ts-funfact').on('appear', function () {
+         if (skl) {
+            $('.counterUp').each(function () {
+               var $this = $(this);
+               jQuery({
+                  Counter: 0
+               }).animate({
+                  Counter: $this.attr('data-counter')
+               }, {
+                  duration: 8000,
+                  easing: 'swing',
+                  step: function () {
+                     var num = Math.ceil(this.Counter).toString();
+                     if (Number(num) > 99999) {
+                        while (/(\d+)(\d{3})/.test(num)) {
+                           num = num.replace(/(\d+)(\d{3})/, '');
+                        }
                      }
+                     $this.html(num);
                   }
-                  $this.html(num);
-               }
+               });
             });
-         });
-         skl = false;
-      }
-   });
-
-
-
-
+            skl = false;
+         }
+      });
+     }
+   
 
    /*=============================================================
    			video popup
    	=========================================================================*/
+      if ($('.ts-video-popup').length > 0) {
+         $('.ts-video-popup').magnificPopup({
+            type: 'iframe',
+            closeOnContentClick: false,
+            midClick: true,
+            callbacks: {
+               beforeOpen: function () {
+                  this.st.mainClass = this.st.el.attr('data-effect');
+               }
+            },
+            zoom: {
+               enabled: true,
+               duration: 500, // don't foget to change the duration also in CSS
+            },
+            mainClass: 'mfp-fade',
+         });
+      }
 
-   $('.ts-video-popup').magnificPopup({
-      type: 'iframe',
-      closeOnContentClick: false,
-      midClick: true,
-      callbacks: {
-         beforeOpen: function () {
-            this.st.mainClass = this.st.el.attr('data-effect');
-         }
-      },
-      zoom: {
-         enabled: true,
-         duration: 500, // don't foget to change the duration also in CSS
-      },
-      mainClass: 'mfp-fade',
-   });
 
 
    /*==========================================================
@@ -296,7 +335,8 @@ jQuery(function ($) {
     ======================================================================*/
    var wow = new WOW({
       animateClass: 'animated',
-      mobile: false
+      offset:       0, 
+      mobile:       false 
    });
    wow.init();
 
@@ -393,7 +433,7 @@ jQuery(function ($) {
     /*=============================================================
    			gallery
    	=========================================================================*/
-
+   if($('.ts-popup').length > 0){
       $('.ts-popup').magnificPopup({
          type: 'image',
          closeOnContentClick: false,
@@ -409,5 +449,9 @@ jQuery(function ($) {
          },
          mainClass: 'mfp-fade',
       });
-      
+   }
+  
+
+
 });
+     
